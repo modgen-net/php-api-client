@@ -14,7 +14,7 @@ namespace Php\Api\Transport;
 use Php\Api\Helpers\Curl;
 use Php\Api\Helpers\Hmac;
 
-class Direct extends Curl
+class Direct
 {
 
     /*
@@ -131,23 +131,19 @@ class Direct extends Curl
      */
     public function addCall($method, $url, $postData = null)
     {
-        //$curl = new Curl();
-
+        $curl = new Curl();
         $urlDbPrefix = '/' . $this->getDb();
 
         $hmac = new Hmac($this->getKey());
         $urlHashed = $this->getHost() . $hmac->hashQuery($urlDbPrefix . $url);
 
-        //$curl->setPostData($postData);
-        parent::setPostData($postData);
-        //$curl->addCall(
-        parent::addCall(
+        $curl->setPostData($postData);
+        $curl->addCall(
             $method,
             $urlHashed
         );
 
-        //self::setResult($curl->process());
-        self::setResult(parent::process());
+        self::setResult($curl->process());
     }
 
     /**

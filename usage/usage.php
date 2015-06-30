@@ -23,10 +23,10 @@ try {
 
     //$classApiClient->resetDatabase(true); //ok
 
-    //print_r($classApiClient->setItemProperty('extra_description', 'string'));  //ok
+    print_r($classApiClient->setItemProperty('extra_description', 'string'));  //ok
     //print_r($classApiClient->getItemProperties());  //ok
     //print_r($classApiClient->getItemPropertyInfo('extra_description')); //ok
-    //print_r($classApiClient->deleteItemProperty('extra_description')); //ok
+    print_r($classApiClient->deleteItemProperty('extra_description')); //ok
 
 
     /*
