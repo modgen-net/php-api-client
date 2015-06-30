@@ -159,6 +159,7 @@ class Direct
         $urlHashed = $this->getHost() . $hmac->hashQuery($urlDbPrefix . $url);
 
         $curl->setPostData($postData);
+        $curl->setHeaderType($this->getHeaderType());
         $curl->addCall(
             $method,
             $urlHashed
