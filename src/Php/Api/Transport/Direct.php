@@ -42,6 +42,11 @@ class Direct
     */
     private $debug;
 
+    /*
+     * @var string - type of header that needs to be set
+    */
+    private $headerType = 'x-www-form-urlencoded';
+
     /**
      * @return string
      */
@@ -120,6 +125,22 @@ class Direct
     public function setDebug($debug)
     {
         $this->debug = $debug;
+    }
+
+    /**
+     * @return string
+     */
+    public function getHeaderType()
+    {
+        return $this->headerType;
+    }
+
+    /**
+     * @param string $headerType
+     */
+    public function setHeaderType($headerType)
+    {
+        $this->headerType = $headerType;
     }
 
     /**
