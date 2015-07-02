@@ -168,7 +168,6 @@ class RestfulEnum
             'method' => 'GET',
             'url' => '/users/__userid__/recomms/?count=__count__'
         ),
-
         'getItemBasedRecommendation' => array(
             'method' => 'GET',
             'url' => '/items/__itemid__/recomms/?count=__count__'
@@ -181,13 +180,12 @@ class RestfulEnum
     );
 
     /**
-     * Add/Modify RESTful method extend url for particular method for API call
-     * @param string $functionName - name of the function which use definition
-     * @param string $definition - RESTful method/url definition
+     * return RESTful definitions list
+     * @return array
      */
-    public static function extendDefinition($functionName, array $definition)
+    public static function getDefinitionsList()
     {
-        self::$restfulDefinition[$functionName] = $definition;
+        return self::$restfulDefinition;
     }
 
     /**
