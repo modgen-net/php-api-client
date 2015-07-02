@@ -37,7 +37,7 @@ class Hmac
      */
     public function hashQuery($url)
     {
-        $url = $url . ( strpos($url,'?') ? '&' : '?') . self::HMAC_KEY_TIMESTAMP . '=' . time();
+        $url = $url . (strpos($url, '?') ? '&' : '?') . self::HMAC_KEY_TIMESTAMP . '=' . time();
         $sign = hash_hmac("sha1", $url, $this->key);
         return $url . '&' . self::HMAC_KEY_SIGN . '=' . $sign;
     }

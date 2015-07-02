@@ -9,10 +9,10 @@
 
 namespace Php\Api\Enums;
 
-class ExceptionsList
+class ExceptionsEnum
 {
     const API_RESTFUL_METHOD_NOT_EXISTS = 'Api restful method "__method__" not exists';
-    const API_RESPONSE_FAIL = 'Api response fail for method "__method__". Response body: __body__]';
+    const API_RESPONSE_FAIL = 'Api response fail for method "__method__". Response body: __body__';
     const API_RESET_DATABASE_CONFIRMATION_FAIL = 'Reset database confirmation fail. Please confirm reset!';
     const API_ITEMS_NO_ID_DEFINED = 'Identificator "__id__" of main element not exists in data set';
     const API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS = 'Not all required keys was added in to data object! Required fields: __requiredkeys__, Present keys: __datakeys__';
@@ -26,7 +26,7 @@ class ExceptionsList
     public static function getMessage($message, array $params = array())
     {
         $msg = strtr($message, $params);
-        return preg_replace('/__.*__/','',$msg);
+        return preg_replace('/__.*__/', '', $msg);
     }
-
 }
+

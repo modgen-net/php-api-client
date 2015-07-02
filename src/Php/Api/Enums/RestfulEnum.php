@@ -12,13 +12,14 @@ namespace Php\Api\Enums;
 use Php\Api\ApiException;
 use Php\Api\Enums\ExceptionsList;
 
-class Restful
+class RestfulEnum
 {
 
     /**
+     * Definition of RESTful urls and methods
      * @var array
      */
-    private static $restfulDefinition = array(
+    public static $restfulDefinition = array(
         'addItem' => array(
             'method' => 'POST',
             'url' => '/items/__itemid__'
@@ -178,6 +179,20 @@ class Restful
             'url' => '/'
         )
     );
+
+    /**
+     * Add RESTful method extend url for particular method for API call
+     * @param string $functionName - name of the function which use definition
+     * @param string $apiMethod - name of the API method in $restfulDefinition
+     * @param string $apiUrl - name of the API url in $restfulDefinition
+     */
+    public static function extendDefinition($functionName, $apiMethod, $apiUrl)
+    {
+        self::$restfulDefinition[$functionName] = array(
+            'method' => $apiMethod,
+            'url' => $apiUrl
+        );
+    }
 
     /**
      * Return RESTful method for API call

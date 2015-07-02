@@ -50,7 +50,11 @@ class CurlResult
      */
     public function setResponseBody($responseBody)
     {
-        $this->responseBody = trim($responseBody,'"');
+        $resp = json_decode($responseBody);
+        $this->responseBody = $resp;
+        if (isset($resp->message)) {
+            $this->responseBody = $resp->message;
+        }
     }
 
     /**
@@ -59,7 +63,7 @@ class CurlResult
      */
     public function __toArray()
     {
-        return (array) get_object_vars($this);
+        return (array)get_object_vars($this);
     }
 
     /**
@@ -68,7 +72,7 @@ class CurlResult
      */
     public function __toJson()
     {
-        return json_encode( get_object_vars($this) );
+        return json_encode(get_object_vars($this));
     }
 
 }

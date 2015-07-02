@@ -5,18 +5,18 @@
  * @author Mirek Ratman
  * @since 2015-06-23
  * @license The MIT License (MIT)
- * @todo handle better restful strings that are replaced durring URL creation (example change __itemid__ to %__itemid__% to make it more unique)
+ * @todo handle better RestfulEnum strings that are replaced durring URL creation (example change __itemid__ to %__itemid__% to make it more unique)
  */
 
 namespace Php\Api;
 
-use Php\Api\Enums\Restful;
+use Php\Api\Enums\RestfulEnum;
 use Php\Api\Helpers\Property;
 use Php\Api\Helpers\Roles;
 use Php\Api\Helpers\Debugger;
 use Php\Api\Transport\Direct;
 use Php\Api\Transport\Transport;
-use Php\Api\Enums\ExceptionsList;
+use Php\Api\Enums\ExceptionsEnum;
 use Php\Api\ApiException;
 
 class Client
@@ -192,8 +192,8 @@ class Client
             $propertyType = 'double';
         }
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array(
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array(
             '__propertyname__' => $propertyName,
             '__type__' => $propertyType,
         ));
@@ -204,8 +204,8 @@ class Client
 
         if ($response->getResponseCode() !== 201) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -231,8 +231,8 @@ class Client
         if ($role) {
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__, array('__rolename__' => $role));
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__, array('__rolename__' => $role));
 
             //Add url query data
             $url = $url . '?' . http_build_query(array('propertyName' => $propertyName));
@@ -244,8 +244,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -270,16 +270,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__);
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__);
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -317,16 +317,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__propertyname__' => $propertyName));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__propertyname__' => $propertyName));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -349,16 +349,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__propertyname__' => $propertyName));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__propertyname__' => $propertyName));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -384,8 +384,8 @@ class Client
         if (array_key_exists($idFiled, $data)) {
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__, array('__itemid__' => $data[$idFiled]));
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $data[$idFiled]));
 
             //Remove id element from post data
             if (isset($data[$idFiled])) {
@@ -405,8 +405,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -419,8 +419,8 @@ class Client
             return $response->getResponseBody();
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_ITEMS_NO_ID_DEFINED,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_ITEMS_NO_ID_DEFINED,
                     array(
                         '__id__' => $idFiled
                     )
@@ -440,16 +440,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__itemid__' => $name));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $name));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -474,8 +474,8 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
 
         //Set post data
         $postData = http_build_query(array_fill_keys($properties, 'null'));
@@ -486,8 +486,8 @@ class Client
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -510,16 +510,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__seriesid__' => $seriesId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__seriesid__' => $seriesId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 201) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -541,16 +541,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__);
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__);
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -573,16 +573,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__seriesid__' => $seriesId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__seriesid__' => $seriesId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -615,8 +615,8 @@ class Client
 
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__, array('__seriesid__' => $seriesId));
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__, array('__seriesid__' => $seriesId));
 
             if ($autoCreate) {
                 $data['cascadeCreate'] = true;
@@ -631,8 +631,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -645,8 +645,8 @@ class Client
             return $response->getResponseBody();
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
                     array(
                         '__requiredkeys__' => json_encode($requiredKeys),
                         '__datakeys__' => json_encode(array_keys($data))
@@ -667,16 +667,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__seriesid__' => $seriesId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__seriesid__' => $seriesId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -699,16 +699,16 @@ class Client
      * @return string
      * @throws ApiException
      */
-    public function deleteSeriesItems(array $properties)
+    public function deleteSeriesItems($seriesId, array $properties)
     {
-        $requiredKeys = array('seriesId', 'itemType', 'itemId', 'time');
+        $requiredKeys = array('itemType', 'itemId', 'time');
 
         if (count(array_intersect_key(array_flip($requiredKeys), $properties)) === count($requiredKeys)) {
 
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__);
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__, array('__seriesid__' => $seriesId));
 
             //Add url query data
             $url = $url . '?' . http_build_query($properties);
@@ -719,8 +719,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -733,11 +733,11 @@ class Client
 
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
                     array(
                         '__requiredkeys__' => json_encode($requiredKeys),
-                        '__datakeys__' => json_encode(array_keys($data))
+                        '__datakeys__' => json_encode(array_keys($properties))
                     )
                 ),
                 500
@@ -759,16 +759,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__userid__' => $userId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__userid__' => $userId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 201) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -792,8 +792,8 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array(
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array(
                 '__targetuserid__' => $targetUserId,
                 '__userid__' => $userId)
         );
@@ -803,8 +803,8 @@ class Client
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -826,16 +826,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__);
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__);
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -858,16 +858,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__userid__' => $userId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__userid__' => $userId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -905,8 +905,8 @@ class Client
 
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__);
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__);
 
             if ($autoCreate) {
                 $data['cascadeCreate'] = true;
@@ -921,8 +921,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -935,8 +935,8 @@ class Client
             return $response->getResponseBody();
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
                     array(
                         '__requiredkeys__' => json_encode($requiredKeys),
                         '__datakeys__' => json_encode(array_keys($data))
@@ -957,16 +957,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -989,16 +989,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__userid__' => $userId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__userid__' => $userId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -1025,8 +1025,8 @@ class Client
 
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__);
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__);
 
             //Add url query data
             $url = $url . '?' . http_build_query($properties);
@@ -1037,8 +1037,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -1051,8 +1051,8 @@ class Client
 
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
                     array(
                         '__requiredkeys__' => json_encode($requiredKeys),
                         '__datakeys__' => json_encode(array_keys($data))
@@ -1082,8 +1082,8 @@ class Client
 
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__);
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__);
 
             if ($autoCreate) {
                 $data['cascadeCreate'] = true;
@@ -1098,8 +1098,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -1112,8 +1112,8 @@ class Client
 
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
                     array(
                         '__requiredkeys__' => json_encode($requiredKeys),
                         '__datakeys__' => json_encode(array_keys($data))
@@ -1134,16 +1134,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -1166,16 +1166,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__userid__' => $userId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__userid__' => $userId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -1202,8 +1202,8 @@ class Client
 
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__);
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__);
 
             //Add url query data
             $url = $url . '?' . http_build_query($properties);
@@ -1214,8 +1214,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -1228,8 +1228,8 @@ class Client
 
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
                     array(
                         '__requiredkeys__' => json_encode($requiredKeys),
                         '__datakeys__' => json_encode(array_keys($data))
@@ -1260,8 +1260,8 @@ class Client
 
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__);
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__);
 
             if ($autoCreate) {
                 $data['cascadeCreate'] = true;
@@ -1276,8 +1276,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -1290,8 +1290,8 @@ class Client
             return $response->getResponseBody();
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
                     array(
                         '__requiredkeys__' => json_encode($requiredKeys),
                         '__datakeys__' => json_encode(array_keys($data))
@@ -1312,16 +1312,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -1344,16 +1344,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__userid__' => $userId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__userid__' => $userId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -1380,8 +1380,8 @@ class Client
 
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__);
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__);
 
             //Add url query data
             $url = $url . '?' . http_build_query($properties);
@@ -1392,8 +1392,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -1406,8 +1406,8 @@ class Client
 
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
                     array(
                         '__requiredkeys__' => json_encode($requiredKeys),
                         '__datakeys__' => json_encode(array_keys($data))
@@ -1437,8 +1437,8 @@ class Client
 
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__);
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__);
 
             if ($autoCreate) {
                 $data['cascadeCreate'] = true;
@@ -1453,8 +1453,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -1467,8 +1467,8 @@ class Client
 
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
                     array(
                         '__requiredkeys__' => json_encode($requiredKeys),
                         '__datakeys__' => json_encode(array_keys($data))
@@ -1489,16 +1489,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -1521,16 +1521,16 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array('__userid__' => $userId));
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__userid__' => $userId));
         $transport->addCall($method, $url);
 
         $response = $transport->process();
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -1557,8 +1557,8 @@ class Client
 
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__);
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__);
 
             //Add url query data
             $url = $url . '?' . http_build_query($properties);
@@ -1569,8 +1569,8 @@ class Client
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -1583,8 +1583,8 @@ class Client
 
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS,
                     array(
                         '__requiredkeys__' => json_encode($requiredKeys),
                         '__datakeys__' => json_encode(array_keys($data))
@@ -1613,8 +1613,8 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array(
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array(
             '__userid__' => $userId,
             '__count__' => $count
         ));
@@ -1628,8 +1628,8 @@ class Client
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -1659,8 +1659,8 @@ class Client
     {
         $transport = $this->getTransport();
 
-        $method = Restful::getMethod(__FUNCTION__);
-        $url = Restful::getUrl(__FUNCTION__, array(
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array(
             '__itemid__' => $itemId,
             '__count__' => $count
         ));
@@ -1674,8 +1674,8 @@ class Client
 
         if ($response->getResponseCode() !== 200) {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESPONSE_FAIL,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
                         '__body__' => $response->getResponseBody()
@@ -1704,16 +1704,16 @@ class Client
         if ($confirm) {
             $transport = $this->getTransport();
 
-            $method = Restful::getMethod(__FUNCTION__);
-            $url = Restful::getUrl(__FUNCTION__);
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__);
             $transport->addCall($method, $url);
 
             $response = $transport->process();
 
             if ($response->getResponseCode() !== 200) {
                 throw new ApiException(
-                    ExceptionsList::getMessage(
-                        ExceptionsList::API_RESPONSE_FAIL,
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
                         array(
                             '__method__' => __FUNCTION__,
                             '__body__' => $response->getResponseBody()
@@ -1726,8 +1726,8 @@ class Client
             return $response->getResponseBody();
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESET_DATABASE_CONFIRMATION_FAIL
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESET_DATABASE_CONFIRMATION_FAIL
                 ),
                 500
             );
