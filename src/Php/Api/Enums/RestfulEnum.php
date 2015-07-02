@@ -211,8 +211,8 @@ class RestfulEnum
             return self::$restfulDefinition[$apiMethod]['method'];
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESTFUL_METHOD_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESTFUL_METHOD_NOT_EXISTS,
                     array('__method__' => $apiMethod)
                 ),
                 500
@@ -233,8 +233,8 @@ class RestfulEnum
             return preg_replace('/__.*__/','',$url);
         } else {
             throw new ApiException(
-                ExceptionsList::getMessage(
-                    ExceptionsList::API_RESTFUL_METHOD_NOT_EXISTS,
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESTFUL_METHOD_NOT_EXISTS,
                     array('__method__' => $apiMethod)
                 ),
                 500
