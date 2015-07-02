@@ -19,7 +19,7 @@ class RestfulEnum
      * Definition of RESTful urls and methods
      * @var array
      */
-    public static $restfulDefinition = array(
+    private static $restfulDefinition = array(
         'addItem' => array(
             'method' => 'POST',
             'url' => '/items/__itemid__'
