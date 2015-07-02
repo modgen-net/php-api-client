@@ -208,7 +208,7 @@ class Client
                     ExceptionsEnum::API_RESPONSE_FAIL,
                     array(
                         '__method__' => __FUNCTION__,
-                        '__body__' => $response->getResponseBody()
+                        '__body__' => json_encode($response->getResponseBody())
                     )
                 ),
                 $response->getResponseCode()
