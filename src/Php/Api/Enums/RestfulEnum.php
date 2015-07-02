@@ -181,17 +181,23 @@ class RestfulEnum
     );
 
     /**
-     * Add RESTful method extend url for particular method for API call
+     * Add/Modify RESTful method extend url for particular method for API call
      * @param string $functionName - name of the function which use definition
-     * @param string $apiMethod - name of the API method in $restfulDefinition
-     * @param string $apiUrl - name of the API url in $restfulDefinition
+     * @param string $definition - RESTful method/url definition
      */
-    public static function extendDefinition($functionName, $apiMethod, $apiUrl)
+    public static function extendDefinition($functionName, array $definition)
     {
-        self::$restfulDefinition[$functionName] = array(
-            'method' => $apiMethod,
-            'url' => $apiUrl
-        );
+        self::$restfulDefinition[$functionName] = $definition;
+    }
+
+    /**
+     * Get RESTful definition
+     * @param string $functionName - name of the function which use definition
+     * @return array
+     */
+    public static function getDefinition($functionName)
+    {
+        return self::$restfulDefinition[$functionName];
     }
 
     /**
