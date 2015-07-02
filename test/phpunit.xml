@@ -17,7 +17,7 @@
     </logging>
     <testsuites>
         <testsuite name="ApiTest">
-            <file>v0_0_7/ApiTest.php</file>
+            <file>ApiTest.php</file>
         </testsuite>
     </testsuites>
     <logging>

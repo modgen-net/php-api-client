@@ -7,7 +7,7 @@
  */
 
 ERROR_REPORTING(E_ALL);
-require_once(__DIR__ . '/../../src/loader.php');
+require_once(__DIR__ . '/../src/loader.php');
 
 class ApiTest extends PHPUnit_Framework_TestCase
 {
@@ -20,9 +20,9 @@ class ApiTest extends PHPUnit_Framework_TestCase
     {
         date_default_timezone_set('UTC');
 
-        $url = 'http://rapi-dev.modgen.net';
-        $db = 'shopexpo-test';
-        $key = 'DyioS5vct4fyqbjjr7Yno8dUFALYjAZe0JP3yR65aCNdtbjk92F9gxU1yDAVR7QS';
+        $url = 'http://rapi.modgen.net';
+        $db = '';
+        $key = '';
 
         $this->classApiClient = new Php\Api\Client($url, $db, $key);
     }
