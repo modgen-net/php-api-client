@@ -202,7 +202,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 201) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 201) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -242,7 +242,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -276,7 +276,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -323,7 +323,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -355,7 +355,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -403,7 +403,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -446,7 +446,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -484,7 +484,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -516,7 +516,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 201) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 201) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -547,7 +547,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -579,7 +579,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -629,7 +629,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -673,7 +673,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -717,7 +717,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -765,7 +765,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 201) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 201) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -801,7 +801,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -832,7 +832,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -864,7 +864,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -919,7 +919,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -963,7 +963,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -995,7 +995,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1035,7 +1035,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1096,7 +1096,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1140,7 +1140,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1172,7 +1172,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1212,7 +1212,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1274,7 +1274,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1318,7 +1318,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1350,7 +1350,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1390,7 +1390,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1451,7 +1451,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1495,7 +1495,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1527,7 +1527,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1567,7 +1567,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1626,7 +1626,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1672,7 +1672,7 @@ class Client
 
         $response = $transport->process();
 
-        if ($response->getResponseCode() !== 200) {
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
             throw new ApiException(
                 ExceptionsEnum::getMessage(
                     ExceptionsEnum::API_RESPONSE_FAIL,
@@ -1710,7 +1710,7 @@ class Client
 
             $response = $transport->process();
 
-            if ($response->getResponseCode() !== 200) {
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
                 throw new ApiException(
                     ExceptionsEnum::getMessage(
                         ExceptionsEnum::API_RESPONSE_FAIL,
