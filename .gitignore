@@ -1,5 +1,6 @@
 .idea/*
 vendor/*
 /test/report/*
+/docs/output
 composer.lock
 composer.phar
