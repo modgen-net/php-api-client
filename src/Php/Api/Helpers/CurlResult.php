@@ -51,9 +51,14 @@ class CurlResult
     public function setResponseBody($responseBody)
     {
         $resp = json_decode($responseBody);
-        $this->responseBody = $resp;
-        if (isset($resp->message)) {
-            $this->responseBody = $resp->message;
+        if( $resp ){
+            $this->responseBody = $resp;
+            if (isset($resp->message)) {
+                $this->responseBody = $resp->message;
+            }
+        }
+        else{
+            $this->responseBody = trim(preg_replace('/\s\s+/', ' ', strip_tags($responseBody)));
         }
     }
 

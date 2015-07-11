@@ -20,21 +20,24 @@ class RestfulEnum
      * @var array
      */
     private static $restfulDefinition = array(
+        //Items
         'addItem' => array(
-            'method' => 'POST',
-            'url' => '/items/__itemid__'
-        ),
-        'addItemId' => array(
             'method' => 'PUT',
             'url' => '/items/__itemid__'
         ),
-        'setItemProperty' => array(
+        'listItems' => array(
+            'method' => 'GET',
+            'url' => '/items/list/__filter__'
+        ),
+        'deleteItem' => array(
+            'method' => 'DELETE',
+            'url' => '/items/__itemid__'
+        ),
+
+        //Item properties
+        'addItemProperty' => array(
             'method' => 'PUT',
             'url' => '/items/properties/__propertyname__?type=__type__'
-        ),
-        'deleteItemProperty' => array(
-            'method' => 'DELETE',
-            'url' => '/items/properties/__propertyname__'
         ),
         'getItemPropertyInfo' => array(
             'method' => 'GET',
@@ -44,6 +47,17 @@ class RestfulEnum
             'method' => 'GET',
             'url' => '/items/properties/list/'
         ),
+        'deleteItemProperty' => array(
+            'method' => 'DELETE',
+            'url' => '/items/properties/__propertyname__'
+        ),
+
+        'setItemValues' => array(
+            'method' => 'POST',
+            'url' => '/items/__itemid__'
+        ),
+
+        //Roles
         'setItemRole' => array(
             'method' => 'PUT',
             'url' => '/items/properties/roles/__rolename__'
@@ -176,7 +190,14 @@ class RestfulEnum
         'resetDatabase' => array(
             'method' => 'DELETE',
             'url' => '/'
+        ),
+
+        //Extra methods to simplify API operations
+        'insertItem' => array(
+            'method' => 'PUT',
+            'url' => '/items/__itemid__'
         )
+
     );
 
     /**

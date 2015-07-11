@@ -1,0 +1,2685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="Modgen PHP API Client" version="2.8.3">
+  <partials/>
+  <file path="usage/_all.php" generated-path="usage._all.html" hash="8e464ddc7bb8d2fbae2011f72080f530" package="Default">
+    <docblock line="0">
+      <description>Created by PhpStorm.</description>
+      <long-description>User: mirekratman
+Date: 25/05/15
+Time: 10:33</long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <source>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</source>
+  </file>
+  <file path="src/Php/Api/Enums/ExceptionsEnum.php" generated-path="src.Php.Api.Enums.ExceptionsEnum.html" hash="8bc03f1d4ff217cf57a3cf15df3df584" package="Default">
+    <docblock line="0">
+      <description>Definition of API Exceptions messages</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="copyright" line="0" description="(c) Modgen s.r.o."/>
+      <tag name="author" line="0" description="Mirek Ratman"/>
+      <tag name="since" line="0" description="2015-06-22"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Php\Api\Enums" line="12" package="Default">
+      <extends/>
+      <name>ExceptionsEnum</name>
+      <full_name>\Php\Api\Enums\ExceptionsEnum</full_name>
+      <docblock line="12">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="12" description="Default"/>
+      </docblock>
+      <constant namespace="Php\Api\Enums" line="14" package="Default">
+        <name>API_RESTFUL_METHOD_NOT_EXISTS</name>
+        <full_name>\Php\Api\Enums\ExceptionsEnum::API_RESTFUL_METHOD_NOT_EXISTS</full_name>
+        <value>'Api restful method "__method__" not exists'</value>
+        <docblock line="14">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Php\Api\Enums" line="15" package="Default">
+        <name>API_RESPONSE_FAIL</name>
+        <full_name>\Php\Api\Enums\ExceptionsEnum::API_RESPONSE_FAIL</full_name>
+        <value>'Api response fail for method "__method__". Response body: __body__'</value>
+        <docblock line="15">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Php\Api\Enums" line="16" package="Default">
+        <name>API_RESET_DATABASE_CONFIRMATION_FAIL</name>
+        <full_name>\Php\Api\Enums\ExceptionsEnum::API_RESET_DATABASE_CONFIRMATION_FAIL</full_name>
+        <value>'Reset database confirmation fail. Please confirm reset!'</value>
+        <docblock line="16">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Php\Api\Enums" line="17" package="Default">
+        <name>API_ITEMS_NO_ID_DEFINED</name>
+        <full_name>\Php\Api\Enums\ExceptionsEnum::API_ITEMS_NO_ID_DEFINED</full_name>
+        <value>'Identificator "__id__" of main element not exists in data set'</value>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Php\Api\Enums" line="18" package="Default">
+        <name>API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS</name>
+        <full_name>\Php\Api\Enums\ExceptionsEnum::API_PURCHASES_DETAILVIEW_REQUIRED_KEYS_NOT_EXISTS</full_name>
+        <value>'Not all required keys was added in to data object! Required fields: __requiredkeys__, Present keys: __datakeys__'</value>
+        <docblock line="18">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Php\Api\Enums" line="26" package="Default">
+        <name>getMessage</name>
+        <full_name>\Php\Api\Enums\ExceptionsEnum::getMessage()</full_name>
+        <docblock line="26">
+          <description>Return filled Exception message</description>
+          <long-description></long-description>
+          <tag name="param" line="26" description="&lt;ul&gt;&#10;&lt;li&gt;API Exception message&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$message">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="26" description="&lt;ul&gt;&#10;&lt;li&gt;associate array of param names and values to change&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$params">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="26" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$message</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="12" code="PPC:ERR-50005">No summary for class \Php\Api\Enums\ExceptionsEnum</error>
+    </parse_markers>
+    <source>eJx1U2tvmzAU/c6vuK0q5aE26SptH9ZVKyuOhlaSLNA9pEqWYwzxCobZZms09b/vGkiVtZ0lBPd1zrkX33fv603tTcdjD8YQiEwqaWWloMrAX4ZA7rmoncNAKYxhuTAu8ZJX9VbLfGNhyEcQVWkuFJiJnlSTNs4au6k0RFKLO1gxWzLV+o1UXMDZ6avXJ6dvTs7OWmchuVBGQLIREIUJXPf2EI0RZkw9TzGkrxnWLjf1rV/LW6Ka0px7Hi+YMXs6nd/74wEejqZ1bdAViZPZzTWNSPJxEdD5IqHkWxgnMVzAANFAC2OzpsAmUXcKh5R2X5QegqosiHtprBmcP8ddLuYxoTM/vN7DqiunP2OygAzH8ALqBFa7tHWVbt8Cpe5N6UscJKGBn/gffGS6Wsxn4Sryk3Axf6RFLGEhZZatGSJicSZ1ydo/6VRMYFmIvYjTKOzBM64wIVGM46FhQAMyC+ckcPBhKpSVmeTMYjfYhmwHg3ekZFKBKESJCXuDAvQ6NYAsz0iWN6urj9hKjBQJNvAlJF+xy8834YoE9BP5Hj/5QXPEZUWBon82eKFSuBNbA7+ZAZamaCKZrTq+av1DcHuAw+1TMymK1Ljx7qpdMaXHsHQzQNXOdnFX38VQcSu53Qp3xohnG42zlEWBoI+3bbcUu7TLmmlWgrFaqhyO+iic/LtL/6liWrMtHLWGwRq81xWXzIo+guPuEttlAKZS+MWKBj+xe75hag9Rd3o7Ib132r7rZo37hhG8HRyyRvFWUi5s1Kka7mQfP1F00dnD0agF6nbMnaPS5BhFMqv3qvu60fljYq+q1iLH31EXuM/DwZTSyZjS6eAYBvg4sL7kwXvwvL9fjXeX</source>
+  </file>
+  <file path="src/Php/Api/Helpers/Debugger.php" generated-path="src.Php.Api.Helpers.Debugger.html" hash="04ac0dab3cf24d7a4f26c7c1f65667dc" package="Default">
+    <docblock line="0">
+      <description>Modgen API Client debugger</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="copyright" line="0" description="(c) Modgen s.r.o. 2015"/>
+      <tag name="author" line="0" description="Mirek Ratman"/>
+      <tag name="since" line="0" description="2015-06-28"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Php\Api\Helpers" line="12" package="Default">
+      <extends/>
+      <name>Debugger</name>
+      <full_name>\Php\Api\Helpers\Debugger</full_name>
+      <docblock line="12">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="12" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="Php\Api\Helpers" line="17" package="Default">
+        <name>$log</name>
+        <full_name>\Php\Api\Helpers\Debugger::log</full_name>
+        <default>array()</default>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="22" package="Default">
+        <name>getLog</name>
+        <full_name>\Php\Api\Helpers\Debugger::getLog()</full_name>
+        <docblock line="22">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="22" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="30" package="Default">
+        <name>clearLog</name>
+        <full_name>\Php\Api\Helpers\Debugger::clearLog()</full_name>
+        <docblock line="30">
+          <description>Method will clear log</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="39" package="Default">
+        <name>addLog</name>
+        <full_name>\Php\Api\Helpers\Debugger::addLog()</full_name>
+        <docblock line="39">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="39" description="&lt;ul&gt;&#10;&lt;li&gt;message to add&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$message">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="39" description="&lt;ul&gt;&#10;&lt;li&gt;value connected to message&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$val">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$message</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$val</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$method</name>
+          <default>null</default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$file</name>
+          <default>null</default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$line</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="55" package="Default">
+        <name>timestampToDateTime</name>
+        <full_name>\Php\Api\Helpers\Debugger::timestampToDateTime()</full_name>
+        <docblock line="55">
+          <description>Method will convert timestamp to DateTime format</description>
+          <long-description></long-description>
+          <tag name="param" line="55" description="" type="integer" variable="$timestamp">
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="55" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$timestamp</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="64" package="Default">
+        <name>__toJson</name>
+        <full_name>\Php\Api\Helpers\Debugger::__toJson()</full_name>
+        <docblock line="64">
+          <description>Method will convert messages list to JSON</description>
+          <long-description></long-description>
+          <tag name="return" line="64" description="" type="\Php\Api\Helpers\JSON">
+            <type>\Php\Api\Helpers\JSON</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="12" code="PPC:ERR-50005">No summary for class \Php\Api\Helpers\Debugger</error>
+      <error line="22" code="PPC:ERR-50008">No summary for method getLog()</error>
+      <error line="39" code="PPC:ERR-50015">Argument $method is missing from the Docblock of addLog</error>
+      <error line="39" code="PPC:ERR-50015">Argument $file is missing from the Docblock of addLog</error>
+      <error line="39" code="PPC:ERR-50015">Argument $line is missing from the Docblock of addLog</error>
+      <error line="39" code="PPC:ERR-50008">No summary for method addLog()</error>
+      <error line="17" code="PPC:ERR-50007">No summary for property $log</error>
+    </parse_markers>
+    <source>eJyVU01v2zAMvftX8BAgThAnXYENRbt0LdbDWjRb0eUyrEOg2oytTZYMSc5QDP3vo+SPJF4cYDrYkvhIvkeR7z8UWRHMxuMAxrBQSYoSrh9u4aPgKC0k+FymKWpnvYpV8aJ5mlkI41EDNlM9VVM4PXnz1oNYaTOlYcE1/oJHZnMm/b3hMkYPi07eRadn/lLwGKVBWGYIi9sl3NfnkA4jQsyCQLIcTcHI9yErnq4L/vQJRYHaXARBLJgxcNNw/BMArdnY/1z4DdPAtGYvEIHgxoJaA0UzLEVTg2b+X2i+YRZhIFQK88onHFGGKuA2okZbalkB9iOUzyQG1qWMLVcSUrT3Kg1H3lgRc6v2H9iMm+iSsl140+s/mRZIZUzgNxcCYoEkhMBHM3rUoZzbZLvSDqe9KphmORiruUxhUBeLytfsrAKWJD3wDRMEpW+JECspMbaYOJfa+yh/CuvYNzknPtzEcfCVmIMshTuvucDtSXDZnPp1f//RKm+tbg3rXEOYX7ZiJ/sQr6YCOD5df8etcXf7DsCRrcxu1zE67pXR7Vpb7+Ps9YSSG9QWLCfaluWFK/MN9fCSLmCtdM5s55W4tEhjQnVpfLptXb3j0VdqfZeqyRZuA/a0e0LIcPgtyqMEsvP83AwnOyz+S28zvtU8k+a7r18+d3Xs3B1WsVpZdWeU7JvPn2RboYxV4tT5NmoGumX7GvwF1SB1Hw==</source>
+  </file>
+  <file path="usage/ratings.php" generated-path="usage.ratings.html" hash="34e701b3f9cc5408e374de8e717aec9f" package="Default">
+    <docblock line="0">
+      <description>Created by PhpStorm.</description>
+      <long-description>User: mirekratman
+Date: 25/05/15
+Time: 10:33</long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <source>eJzFVG1P2zAQ/p5fcaBKSVFJAqUC8dKJtdXUCQ3UlW9IkZtcGgsnzmwHyCb++85pU0bRND5MwpKl5F6ee56zfeefyqx0gr09B/ZgpJAZTGBRw01WfjdS5b6132pUp5BzhfeKmZwV1jim0FM4HAThIDgYWMuc52Q5CE/7ffoNHGcym13Potnk5no2n3774k2iy6ur7pmj8EdFYBBF4+ksisCH3cD3A63iQEiWoPKJ1O6Z4yRUI0owZZUwkSH4n7LASKPx3Nv5yCWoFiuSRYzeC6BrAQ1qE7DKZH6CDxazyQiCTqVEDzrJAliRQOcea2BER5NgUs8LaHIoHlIuENhCPqBPeTcCmUaoSssLTIYrf6V5sYRaVgpYHKPWEBMOFoYzoSnNFokzViwR/iQDRr4UoqIWT/BiU68TC6b1ZclHghMYXECBj/Zg7sh2tzJ6Gym9RkcPUqqJVibGmYTd81Lh0LbSqBp+OUArCGZILQQSwRZWDz6xvBS4do5knhOyvQYYs4r8MgWNcaW4qYFuiJaF9mGecQ05mkwmUBV0ZvDIhQBUFvExk9QXWwBSJXMYf4adnZ11gbaLtLmBmDqfVkLU0PpLxQsTKW9L//5QWdrjNWvPqAq7Vmgrihl7DGsxurH+FYolySreY0qx2mui2+USNTVNXLgYgsukOdYLJvWxYTq12+29juYG8zbafu8f9o+2Y+zd1YaYNWEHR/1BeBIOTsKtMNVwWkGFft/deLvNF8mF/6VLHktW64Tp4iQ9Zu8QFYYfJUpwbabEYaVMey9dfl+uHV+b3G3d/4ZIUKDBj2/r2745zvr28xS8ToKLaklT4o2AJb0a6/O63fUIeKW3ydsfRpGRX+ltexbYBjxb/Gd6oCbOwLtrBw/tyVOMpeGygA62kBs4O3yeKfM3NlbYAg==</source>
+  </file>
+  <file path="src/Php/Api/Helpers/CurlResult.php" generated-path="src.Php.Api.Helpers.CurlResult.html" hash="27f27b22f22fd93d654d49f0ccf7bc72" package="Default">
+    <docblock line="0">
+      <description>Class define structure and methods of CurlResponse object</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="copyright" line="0" description="(c) Modgen s.r.o. 2015"/>
+      <tag name="author" line="0" description="Mirek Ratman"/>
+      <tag name="since" line="0" description="2015-05-25"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Php\Api\Helpers" line="12" package="Default">
+      <extends/>
+      <name>CurlResult</name>
+      <full_name>\Php\Api\Helpers\CurlResult</full_name>
+      <docblock line="12">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="12" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="Php\Api\Helpers" line="17" package="Default">
+        <name>$responseCode</name>
+        <full_name>\Php\Api\Helpers\CurlResult::responseCode</full_name>
+        <default>'0'</default>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api\Helpers" line="22" package="Default">
+        <name>$responseBody</name>
+        <full_name>\Php\Api\Helpers\CurlResult::responseBody</full_name>
+        <default>null</default>
+        <docblock line="22">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="27" package="Default">
+        <name>getResponseCode</name>
+        <full_name>\Php\Api\Helpers\CurlResult::getResponseCode()</full_name>
+        <docblock line="27">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="27" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="35" package="Default">
+        <name>setResponseCode</name>
+        <full_name>\Php\Api\Helpers\CurlResult::setResponseCode()</full_name>
+        <docblock line="35">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="35" description="" type="string" variable="$responseCode">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$responseCode</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="43" package="Default">
+        <name>getResponseBody</name>
+        <full_name>\Php\Api\Helpers\CurlResult::getResponseBody()</full_name>
+        <docblock line="43">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="43" description="" type="null">
+            <type>null</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="51" package="Default">
+        <name>setResponseBody</name>
+        <full_name>\Php\Api\Helpers\CurlResult::setResponseBody()</full_name>
+        <docblock line="51">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="51" description="" type="null" variable="$responseBody">
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$responseBody</name>
+          <default></default>
+          <type>null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="69" package="Default">
+        <name>__toArray</name>
+        <full_name>\Php\Api\Helpers\CurlResult::__toArray()</full_name>
+        <docblock line="69">
+          <description>Method will convert response object to associated array</description>
+          <long-description></long-description>
+          <tag name="return" line="69" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="78" package="Default">
+        <name>__toJson</name>
+        <full_name>\Php\Api\Helpers\CurlResult::__toJson()</full_name>
+        <docblock line="78">
+          <description>Method will convert response object to JSON</description>
+          <long-description></long-description>
+          <tag name="return" line="78" description="" type="\Php\Api\Helpers\JSON">
+            <type>\Php\Api\Helpers\JSON</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="12" code="PPC:ERR-50005">No summary for class \Php\Api\Helpers\CurlResult</error>
+      <error line="27" code="PPC:ERR-50008">No summary for method getResponseCode()</error>
+      <error line="35" code="PPC:ERR-50008">No summary for method setResponseCode()</error>
+      <error line="43" code="PPC:ERR-50008">No summary for method getResponseBody()</error>
+      <error line="51" code="PPC:ERR-50008">No summary for method setResponseBody()</error>
+      <error line="17" code="PPC:ERR-50007">No summary for property $responseCode</error>
+      <error line="22" code="PPC:ERR-50007">No summary for property $responseBody</error>
+    </parse_markers>
+    <source>eJyNVMtu2zAQvOsr9mDAkls/GiAnt2lTX9qgbgs3RwMCQ60lpjJJkJQLo/C/Z0kLtuRHIh0siZ6dnR2O+PGzLnQ0HgwiGMCsZNZChishEawzFXeVQWAygzW6QmUW1ApmlSkXaLWSFkE9PSN3vvgLV3prRF44iHkCc5XlKMGOzEiN4Gby4TaAWEU8BubC4F9YMLdmMqxbITkG2HByO7zZg0vB0Td5LBDm3x/hR/0e00tCiHEUSbYmKYxqfxd6ea/F8huWGo2dRhEP49Ryq9JF/yOgazwIN99gwwwI6TBHE9aI0d+0ERvmEHqmHnOmMoRP0J/0ifYCB3klZP4qxVeVbYlCVmV54DiSGCSnZZPnQFQ9kQ2wqiR3QknI0S0aquIkoPaT+atm6rlC2OFdc4BpwOzOm2tm2Lru3Z75VSX2REmr8lTWBT3kRq+Tvnokb11Xa7zbHa3x0Des8Z3bO9nVmKCjVXlmjP+TrHi2SqYZ8paToWB6wIpVXOOTI8EFd+usBei0BRQriIUlgfsewzv6eizLMUmgzfgG66GwTb+Lzp+wtNhFLcVvHWuDeWpQl/RFx/3x0i7tu3H/PfSBfnxCdepYbk8cShoe7a5s5TwcYPBP0FZyJTdoHJj2KQZOAZ0Yigv6cjNgxrDtaQibi5d3P02duveoa/mLA0dCaU33fVM6Qmgk70pyLYkd5T/8+fXzVHJj7briB4rfNcEhmihDNC+rPsrevQBHJ9Iv</source>
+  </file>
+  <file path="src/Php/Api/Helpers/Roles.php" generated-path="src.Php.Api.Helpers.Roles.html" hash="8fd51a04a4efd486f31cfe7cd9307caf" package="Default">
+    <docblock line="0">
+      <description>Class responsible of property role definition</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="copyright" line="0" description="(c) Modgen s.r.o. 2015"/>
+      <tag name="author" line="0" description="Mirek Ratman"/>
+      <tag name="since" line="0" description="2015-05-25"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Php\Api\Helpers" line="12" package="Default">
+      <extends/>
+      <name>Roles</name>
+      <full_name>\Php\Api\Helpers\Roles</full_name>
+      <docblock line="12">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="12" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Php\Api\Helpers" line="20" package="Default">
+        <name>getPropertyType</name>
+        <full_name>\Php\Api\Helpers\Roles::getPropertyType()</full_name>
+        <docblock line="20">
+          <description>Return right property type</description>
+          <long-description></long-description>
+          <tag name="param" line="20" description="&lt;ul&gt;&#10;&lt;li&gt;property to check&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$value">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="20" description="&lt;ul&gt;&#10;&lt;li&gt;force type of value to &quot;set&quot;&lt;/li&gt;&#10;&lt;/ul&gt;" type="boolean" variable="$forceSetType">
+            <type>boolean</type>
+          </tag>
+          <tag name="return" line="20" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$forceSetType</name>
+          <default>false</default>
+          <type>boolean</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="12" code="PPC:ERR-50005">No summary for class \Php\Api\Helpers\Roles</error>
+    </parse_markers>
+    <source>eJyNUk1rAjEQvedXDCKoS/2o4KW21NJLCxXEevSSjbNucE1Ckm2R4n/vJLFi7eccEibz5s2bt3t9a0rD+lnGIIP7ijsHFp3Rysm8QtAFGKsNWr8Dq+lhhYVU0kutQsNEaLOzcl16aIsOTPVqjQpcz/Z0D4aDy1EE8dqX2sJUWtzAnPstT81OKoER1h2MusMErqRA5RAWJcL0cQFPh7xNSYcQfcYU35JETr2z0izvjFw+YEUa3ZgxEVeYk1TH3hhQxN1CZDBHX1sFSfBxL78z+IGYGG75Fpy3Uq2h+cKrGqF7gtUgShSbM3yuaSBX0Cy0FfiMfkGc1BfTOCA4mdiIouHQN44UNqlKMw+v/XibOic7qMI9XUWtRDAe1uhnB0FhTrsZDLk4G34DBa8cdiJRciKEe5VelJB6OieFEIKT0S1jyfLW1adKiIPOFn01vcXW+Asgt8g3428Yw6xfCGP5X3T09/G68j9SxZX/ZNqzdO7ZOzn51L0=</source>
+  </file>
+  <file path="usage/recommendations.php" generated-path="usage.recommendations.html" hash="2601664c4f08cbb9fe20a5d87c9c70ce" package="Default">
+    <docblock line="0">
+      <description>Created by PhpStorm.</description>
+      <long-description>User: mirekratman
+Date: 25/05/15
+Time: 10:33</long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <source>eJztV1tP40YUfia/4gCR7KBgJ0AKZXepgCCUinZpln2LZE08x3i6tsedGcOmFf+9Z+w42YSwJNuLVKmRLDkz5/J95zbjtz/kcd7w9/YasAeXCplBDuMJ3Mb5ByNV6tn1jxrVKaRC4SfFTMoyu9gn0VM46Pmdnt/t2ZU7kdJKt3N6eEh//Ubjajh8PwyGV7fvh3eDn6/dq+D85qb1pqHwt4KMQRD0B8MgAA92fM/ztQr9RDKOyiNQO28aDU4+Ao4RKxITGDL/u8ww0Ghc5+PdpUOmaluBzEJ05wYda9CgNj4rTOxxfLA2Sw3fbxYqaUOTj4FlHJqfcAKM4GgiTOxFBqUOyUMkEgQ2lg/okd5tgkwjFLnFBSbGar/QIruHiSwUsDBErSEkO5gZwRJNatZJGLPsHuFLMGDk3BE5tfYSkc38NcOEaX2ei8tEkDF4Bxk+2sSMaG1ULbozKu2SRxsi8omWJoaxhJ23ucIzG0qjJvBHA+jn+0OkEAKRYGPLBz+zNE9wunkp05Qs2zLAkBW0LyPQGBZKmAlQhWiZaQ/uYqEhRRNLDkVGOYNHkSSAylp8jCXFxTqASMkU+hewvb09dVBHkR5hIKTIR0WSTKDez5XITKDcJf77Z8rC7k9Ru0YV2LJEa05hCZycCpnVnHS5W4VilI2y3d1dOOfc5ov8Kxj0gUlzrMdM6mPDdGSfUUYBs3ovImGc255wnefKjsX0qlN5LNlEc6azk+iYbeJxSdOZhWClP2Ew3e++bl5kZNwMSNplSrGJW4rXP0dwB7a2tt6d0Wtp0WkvCmQsxZnIII+pTeFIQ/e764tlUfbARMLGiZUnaZvGJQmOOlQit3msZJwPMqVymi/bkhS3cy8X19RAYVKUnHWOoYhEWBaCpo4osrB8XUZi2L2uQf9KVR1gFkqO0wg4oqTRPtLt8oUivaRP0QxL1hZi9/ue1zt4RpZz5M7Wlv1TSh0d9jonnd5Jx5kJtsq3r5ZNGfSDv5xGO6IolTM0ldn/c/k35nKuU0d7lt2X05sXis6HatKu27GE5naqtjLXdtIMqG0t0hVTaomb9VpLr+5we/pqQ0O1FJpz36SMn/Fco6Q34bk8G18j+SzFG5BcwfIajbE01eJRFElVzf1vOWnu0di5f0H0+eIRt/LwaXdXJ2BzaHScmxh++uXmH8DYnnYlFw+oNF0rnHdnXa/T2hi7zeLalUQw7WRcCbMuh25nFbaOd9B6Ied9TNAs1Pa6DcytJv53evgFpmsEfkOm/2YXf4Wmta3BrSLZrjy11iVrC03PDp9pMmq4L9T5zPM3D4vK94Y300W3G19Mv/S58m5adY2IwG1yHBf39B2zqjX7ds9ttaYfKQs+S739syAw8kc6292ayJM1/0SfECaMwR3Vn0b0XH0OsbpdNLE2OTNnP4+eSPNPabFntA==</source>
+  </file>
+  <file path="src/Php/Api/Transport/Direct.php" generated-path="src.Php.Api.Transport.Direct.html" hash="cd0328db1515e56e34a6a801d2bb7301" package="Recommender/Api/Helpers">
+    <docblock line="0">
+      <description>Class responsible of Modgen API calls through CURL</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Recommender/Api/Helpers"/>
+      <tag name="package" line="0" description="Recommender/Api/Helpers"/>
+      <tag name="copyright" line="0" description="(c) Modgen s.r.o. 2015"/>
+      <tag name="author" line="0" description="Mirek Ratman"/>
+      <tag name="version" line="0" description="1.0"/>
+      <tag name="since" line="0" description="2015-05-25"/>
+      <tag name="license" line="0" description=""/>
+    </docblock>
+    <namespace-alias name="Curl">\Php\Api\Helpers\Curl</namespace-alias>
+    <namespace-alias name="Hmac">\Php\Api\Helpers\Hmac</namespace-alias>
+    <class final="false" abstract="false" namespace="Php\Api\Transport" line="17" package="Recommender/Api/Helpers">
+      <extends/>
+      <name>Direct</name>
+      <full_name>\Php\Api\Transport\Direct</full_name>
+      <docblock line="17">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="17" description="Recommender/Api/Helpers"/>
+        <tag name="package" line="17" description="Recommender/Api/Helpers"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="Php\Api\Transport" line="23" package="Recommender/Api/Helpers">
+        <name>$db</name>
+        <full_name>\Php\Api\Transport\Direct::db</full_name>
+        <default>''</default>
+        <docblock line="23">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api\Transport" line="28" package="Recommender/Api/Helpers">
+        <name>$key</name>
+        <full_name>\Php\Api\Transport\Direct::key</full_name>
+        <default>''</default>
+        <docblock line="28">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api\Transport" line="33" package="Recommender/Api/Helpers">
+        <name>$host</name>
+        <full_name>\Php\Api\Transport\Direct::host</full_name>
+        <default>''</default>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api\Transport" line="38" package="Recommender/Api/Helpers">
+        <name>$result</name>
+        <full_name>\Php\Api\Transport\Direct::result</full_name>
+        <default></default>
+        <docblock line="38">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api\Transport" line="43" package="Recommender/Api/Helpers">
+        <name>$debug</name>
+        <full_name>\Php\Api\Transport\Direct::debug</full_name>
+        <default></default>
+        <docblock line="43">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api\Transport" line="48" package="Recommender/Api/Helpers">
+        <name>$headerType</name>
+        <full_name>\Php\Api\Transport\Direct::headerType</full_name>
+        <default>'x-www-form-urlencoded'</default>
+        <docblock line="48">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="53" package="Recommender/Api/Helpers">
+        <name>getDb</name>
+        <full_name>\Php\Api\Transport\Direct::getDb()</full_name>
+        <docblock line="53">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="53" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="61" package="Recommender/Api/Helpers">
+        <name>setDb</name>
+        <full_name>\Php\Api\Transport\Direct::setDb()</full_name>
+        <docblock line="61">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="61" description="" type="string" variable="$db">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$db</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="69" package="Recommender/Api/Helpers">
+        <name>getKey</name>
+        <full_name>\Php\Api\Transport\Direct::getKey()</full_name>
+        <docblock line="69">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="69" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="77" package="Recommender/Api/Helpers">
+        <name>setKey</name>
+        <full_name>\Php\Api\Transport\Direct::setKey()</full_name>
+        <docblock line="77">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="77" description="" type="string" variable="$key">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$key</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="85" package="Recommender/Api/Helpers">
+        <name>getHost</name>
+        <full_name>\Php\Api\Transport\Direct::getHost()</full_name>
+        <docblock line="85">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="85" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="93" package="Recommender/Api/Helpers">
+        <name>setHost</name>
+        <full_name>\Php\Api\Transport\Direct::setHost()</full_name>
+        <docblock line="93">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="93" description="" type="string" variable="$host">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$host</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="101" package="Recommender/Api/Helpers">
+        <name>getResult</name>
+        <full_name>\Php\Api\Transport\Direct::getResult()</full_name>
+        <docblock line="101">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="101" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="109" package="Recommender/Api/Helpers">
+        <name>setResult</name>
+        <full_name>\Php\Api\Transport\Direct::setResult()</full_name>
+        <docblock line="109">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="109" description="" type="mixed" variable="$result">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$result</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="117" package="Recommender/Api/Helpers">
+        <name>getDebug</name>
+        <full_name>\Php\Api\Transport\Direct::getDebug()</full_name>
+        <docblock line="117">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="117" description="" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="125" package="Recommender/Api/Helpers">
+        <name>setDebug</name>
+        <full_name>\Php\Api\Transport\Direct::setDebug()</full_name>
+        <docblock line="125">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="125" description="" type="boolean" variable="$debug">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$debug</name>
+          <default></default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="133" package="Recommender/Api/Helpers">
+        <name>getHeaderType</name>
+        <full_name>\Php\Api\Transport\Direct::getHeaderType()</full_name>
+        <docblock line="133">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="133" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="141" package="Recommender/Api/Helpers">
+        <name>setHeaderType</name>
+        <full_name>\Php\Api\Transport\Direct::setHeaderType()</full_name>
+        <docblock line="141">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="141" description="" type="string" variable="$headerType">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$headerType</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="153" package="Recommender/Api/Helpers">
+        <name>addCall</name>
+        <full_name>\Php\Api\Transport\Direct::addCall()</full_name>
+        <docblock line="153">
+          <description>Method will prepare CURL request</description>
+          <long-description></long-description>
+          <tag name="param" line="153" description="&lt;ul&gt;&#10;&lt;li&gt;method to call&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$method">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="153" description="&lt;ul&gt;&#10;&lt;li&gt;URL to call&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$url">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="153" description="&lt;ul&gt;&#10;&lt;li&gt;POST data&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$postData">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="153" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$method</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$url</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$postData</name>
+          <default>null</default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Transport" line="175" package="Recommender/Api/Helpers">
+        <name>process</name>
+        <full_name>\Php\Api\Transport\Direct::process()</full_name>
+        <docblock line="175">
+          <description>Method will return result of API call</description>
+          <long-description></long-description>
+          <tag name="return" line="175" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50001">Only one @package tag is allowed</error>
+      <error line="17" code="PPC:ERR-50005">No summary for class \Php\Api\Transport\Direct</error>
+      <error line="53" code="PPC:ERR-50008">No summary for method getDb()</error>
+      <error line="61" code="PPC:ERR-50008">No summary for method setDb()</error>
+      <error line="69" code="PPC:ERR-50008">No summary for method getKey()</error>
+      <error line="77" code="PPC:ERR-50008">No summary for method setKey()</error>
+      <error line="85" code="PPC:ERR-50008">No summary for method getHost()</error>
+      <error line="93" code="PPC:ERR-50008">No summary for method setHost()</error>
+      <error line="101" code="PPC:ERR-50008">No summary for method getResult()</error>
+      <error line="109" code="PPC:ERR-50008">No summary for method setResult()</error>
+      <error line="117" code="PPC:ERR-50008">No summary for method getDebug()</error>
+      <error line="125" code="PPC:ERR-50008">No summary for method setDebug()</error>
+      <error line="133" code="PPC:ERR-50008">No summary for method getHeaderType()</error>
+      <error line="141" code="PPC:ERR-50008">No summary for method setHeaderType()</error>
+      <error line="23" code="PPC:ERR-50007">No summary for property $db</error>
+      <error line="28" code="PPC:ERR-50007">No summary for property $key</error>
+      <error line="33" code="PPC:ERR-50007">No summary for property $host</error>
+      <error line="38" code="PPC:ERR-50007">No summary for property $result</error>
+      <error line="43" code="PPC:ERR-50007">No summary for property $debug</error>
+      <error line="48" code="PPC:ERR-50007">No summary for property $headerType</error>
+    </parse_markers>
+    <source>eJyVVk1T2zAQvftX7CEzhAxOgBkupNDS5BCmZZqm9MZFtjexB9tyJZmQYfjvXcnyBySxk1xiaz/ePvntSl++ZmHmjAYDBwYwiZmUIFBmPJWRFyPwJTzwYIUp3M3vwWdxLEGFguerECZ/Fz911LeM+c9shbBAnycJpgGK0V0WjWYYZyik8fF5thHRKlTQ90/LnHIohnwIl+cXV8aJ5SrkAh4igc+wYCphqVl/oSwRT+FieG7eZZT6aMLc8yv3sgiOIx9TifQ8cpyUJcSCkdc8zJ6omKdHwVLiJdTYcXJZr9sinya5iMc7LbOE+RTkm82ZUm2+ct4cB+g3Gpg/UyMTIJWI0hW4zT2bfof7qfUamf9MRC9MIfQCD27g5GTcnitPo385mlzPuNmdiQyHpGqUNeNSObtShWRoyZVErxjsDCTZ5LE6NipAL191lK02mVFiiIykRfpjClLEgKTIwUOQuIeK8X/U0UTo1V2v1+6Si8SlT42pzwMMapY1tkCVi9TCf9zv3COVwTJPfaX1uEI19fqnxvZWeNLPxvdUGEn3NvDGxvK+DZQxwZKSJqmhFUsaLPL6DFfhEMleC9pRtH7gpoMXSe5AYluq3Wam4bTfHm6FvHttkEex0+LvoKfb4EB+YdlKLQQNovHcQ9G2Xa8V15ZYd1MLx4Vpxw6WZc+28jRwZX93EbWw1nsP2cKo6XYUYKv1OI9RnwXtlKd6lnS1YzFvWglbODucOrvSoBa++3pT20x7tqIfp+FquHUpuXI8VM9VQKeq6xoaUfsU3pzGve6qHpAuAwGsozimkY5UI5orB9Gj87Bquc/VJ0WYC/aBjgh9bdnjTScBueqs7X4ZteWUKUbO819/HiGg58/f7YVH7V3JgmBCEH1b45mBP2skv4E0j+Ot/fN1lWTDNehbSv90XNvoferNBS6jV33IjU5gWG64PZ3sCWe8Q7rK2Ez6VtOvPc3A/5R4xmRInX/TSFhMTo2hU9FHJZffOQoa381Khib+A7Qm4d6SaOaWbb/i3YSt3JraquEbot+OKve3Wjc2u9kfFyt21XKzWInx8vq6Mc2K/JngPkpZQbdr1qrCzjq6vpQ36OPHeQW8u9GLchszvyzv/T/+jEFa</source>
+  </file>
+  <file path="src/Php/Api/Enums/RestfulEnum.php" generated-path="src.Php.Api.Enums.RestfulEnum.html" hash="56917e7b3c34edbe6b486468935c4887" package="Default">
+    <docblock line="0">
+      <description>Definition of RESTful methods and URL of Modgen API</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="copyright" line="0" description="(c) Modgen s.r.o."/>
+      <tag name="author" line="0" description="Mirek Ratman"/>
+      <tag name="since" line="0" description="2015-06-22"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+    </docblock>
+    <namespace-alias name="ApiException">\Php\Api\ApiException</namespace-alias>
+    <namespace-alias name="ExceptionsList">\Php\Api\Enums\ExceptionsList</namespace-alias>
+    <class final="false" abstract="false" namespace="Php\Api\Enums" line="15" package="Default">
+      <extends/>
+      <name>RestfulEnum</name>
+      <full_name>\Php\Api\Enums\RestfulEnum</full_name>
+      <docblock line="15">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="15" description="Default"/>
+      </docblock>
+      <property static="true" visibility="private" namespace="Php\Api\Enums" line="22" package="Default">
+        <name>$restfulDefinition</name>
+        <full_name>\Php\Api\Enums\RestfulEnum::restfulDefinition</full_name>
+        <default>array('addItem' =&gt; array('method' =&gt; 'PUT', 'url' =&gt; '/items/__itemid__'), 'listItems' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/items/list/__filter__'), 'deleteItem' =&gt; array('method' =&gt; 'DELETE', 'url' =&gt; '/items/__itemid__'), 'addItemProperty' =&gt; array('method' =&gt; 'PUT', 'url' =&gt; '/items/properties/__propertyname__?type=__type__'), 'getItemPropertyInfo' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/items/properties/__propertyname__'), 'getItemProperties' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/items/properties/list/'), 'deleteItemProperty' =&gt; array('method' =&gt; 'DELETE', 'url' =&gt; '/items/properties/__propertyname__'), 'setItemValues' =&gt; array('method' =&gt; 'POST', 'url' =&gt; '/items/__itemid__'), 'setItemRole' =&gt; array('method' =&gt; 'PUT', 'url' =&gt; '/items/properties/roles/__rolename__'), 'deleteItemValues' =&gt; array('method' =&gt; 'POST', 'url' =&gt; '/items/__itemid__'), 'addSeries' =&gt; array('method' =&gt; 'PUT', 'url' =&gt; '/series/__seriesid__'), 'listSeries' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/series/list/'), 'deleteSeries' =&gt; array('method' =&gt; 'DELETE', 'url' =&gt; '/series/__seriesid__'), 'addIntoSeries' =&gt; array('method' =&gt; 'POST', 'url' =&gt; '/series/__seriesid__/items/'), 'listSeriesItems' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/series/__seriesid__/items/'), 'deleteSeriesItems' =&gt; array('method' =&gt; 'DELETE', 'url' =&gt; '/series/__seriesid__/items/'), 'addUser' =&gt; array('method' =&gt; 'PUT', 'url' =&gt; '/users/__userid__'), 'mergeUsers' =&gt; array('method' =&gt; 'PUT', 'url' =&gt; '/users/__targetuserid__/merge/__userid__'), 'listUsers' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/users/list/'), 'deleteUser' =&gt; array('method' =&gt; 'DELETE', 'url' =&gt; '/users/__userid__'), 'addDetailView' =&gt; array('method' =&gt; 'POST', 'url' =&gt; '/detailviews/'), 'listItemDetailViews' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/items/__itemid__/detailviews/'), 'listUserDetailViews' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/users/__userid__/detailviews/'), 'deleteDetailView' =&gt; array('method' =&gt; 'DELETE', 'url' =&gt; '/detailviews/'), 'addPurchase' =&gt; array('method' =&gt; 'POST', 'url' =&gt; '/purchases/'), 'listItemPurchases' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/items/__itemid__/purchases/'), 'listUserPurchases' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/users/__userid__/purchases/'), 'deletePurchase' =&gt; array('method' =&gt; 'DELETE', 'url' =&gt; '/purchases/'), 'addRating' =&gt; array('method' =&gt; 'POST', 'url' =&gt; '/ratings/'), 'listItemRatings' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/items/__itemid__/ratings/'), 'listUserRatings' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/users/__userid__/ratings/'), 'deleteRating' =&gt; array('method' =&gt; 'DELETE', 'url' =&gt; '/ratings/'), 'addBoomark' =&gt; array('method' =&gt; 'POST', 'url' =&gt; '/bookmarks/'), 'listItemBoomarks' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/items/__itemid__/bookmarks/'), 'listUserBoomarks' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/users/__userid__/bookmarks/'), 'deleteBoomark' =&gt; array('method' =&gt; 'DELETE', 'url' =&gt; '/bookmarks/'), 'getUserBasedRecommendation' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/users/__userid__/recomms/?count=__count__'), 'getItemBasedRecommendation' =&gt; array('method' =&gt; 'GET', 'url' =&gt; '/items/__itemid__/recomms/?count=__count__'), 'resetDatabase' =&gt; array('method' =&gt; 'DELETE', 'url' =&gt; '/'), 'insertItem' =&gt; array('method' =&gt; 'PUT', 'url' =&gt; '/items/__itemid__'))</default>
+        <docblock line="22">
+          <description>Definition of RESTful urls and methods</description>
+          <long-description></long-description>
+          <tag name="var" line="22" description="" type="array" variable="">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Php\Api\Enums" line="207" package="Default">
+        <name>getDefinitionsList</name>
+        <full_name>\Php\Api\Enums\RestfulEnum::getDefinitionsList()</full_name>
+        <docblock line="207">
+          <description>return RESTful definitions list</description>
+          <long-description></long-description>
+          <tag name="return" line="207" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Php\Api\Enums" line="217" package="Default">
+        <name>getDefinition</name>
+        <full_name>\Php\Api\Enums\RestfulEnum::getDefinition()</full_name>
+        <docblock line="217">
+          <description>Get RESTful definition</description>
+          <long-description></long-description>
+          <tag name="param" line="217" description="&lt;ul&gt;&#10;&lt;li&gt;name of the function which use definition&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$functionName">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="217" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$functionName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Php\Api\Enums" line="227" package="Default">
+        <name>getMethod</name>
+        <full_name>\Php\Api\Enums\RestfulEnum::getMethod()</full_name>
+        <docblock line="227">
+          <description>Return RESTful method for API call</description>
+          <long-description></long-description>
+          <tag name="param" line="227" description="&lt;ul&gt;&#10;&lt;li&gt;name of the API method in $restfulDefinition&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$apiMethod">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="227" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$apiMethod</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Php\Api\Enums" line="248" package="Default">
+        <name>getUrl</name>
+        <full_name>\Php\Api\Enums\RestfulEnum::getUrl()</full_name>
+        <docblock line="248">
+          <description>Return RESTful url for API call with filled params</description>
+          <long-description></long-description>
+          <tag name="param" line="248" description="&lt;ul&gt;&#10;&lt;li&gt;name of the API method in $restfulDefinition&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$apiMethod">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="248" description="&lt;ul&gt;&#10;&lt;li&gt;associate array of param names and values to change&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$params">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="248" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$apiMethod</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="15" code="PPC:ERR-50005">No summary for class \Php\Api\Enums\RestfulEnum</error>
+    </parse_markers>
+    <source>eJztWV1P4zgUfe+v8ANSGlQoizTzAMvCrOjOIsFQlTJaaUCRSZzGIl+yXaAazX9fXztpkrZJXEj3aSOhkNi+5/ica6e5+f08DdLecH+/h/bRJfFpTAVNYpT4aDK6m/rzEEVEBInHEY49dD+5hqabxJuRGH0ZX8GwCzdJF4zOAoH6rp038kN2mByqdjyXERi6oYw8owkWEY7VfU5jl6Djo98+HRx9Pjg+VjdD6pKYEzQNCLq5mqLr7LovL2zZY9jrxTgiPMVy7DhIH76k9GEUzyN+2uvNeXFP/o3eXJLCfE4rLar3w7KRX1Mu5GA3xJyjCeFCThv69H72ekgeSh446iSas1Drk2mV9754wQxhxvAiuzNU55TRFywI4gIL6qI9piFLsc/0qL4eBhSGV4JEfHltYc+DOxY6+2O1r2rXTFSzNb6fWoNqs2Ss24YU4g4dB87Ucxxr2dEuxlihlEgxMAL8OmoFhIAS1aehIKwO1SMhEcR4npej69F09M6prkgtTUpSwgQl66KPddOiK/ELKEkuu1hAkjvOuVik5Mxx4FSn0oyIMqur2E+6cqmBmQkXOW4HTFTqtCXMVh6ZJY6pGAUdrtX4jsO5oRLj27v3rtVSAk+SsJy2GQ24u4OUZQAmScG5KTUKb/4jPSrr9o4w02xsnD5XcSSm/qd5x9wCtHEJZKCtib8FXlvKG88T9sRYJNvo2+jpBuDM5zadO3o+bUugLL05hXfov4lFxYd72ffjGS5/KTEAhnO97RFhMwKAHaypHFFgGVPkuEMF0UoE/Dfn0ei85tG6yoxlbvO4UemKs5dEYBp+p+S1gxXmqWAvMljTmoJULmA7e44Xm7UhD1C7Ux6rqhvw0L5vaUKb+7WwFefHc+YGmBs+uBt9T7NQba7nkLvw3IQDON4hhzW/2zhot7cSvs3rGsiK0/LFmMazDnxmKlCbyxpuFx6344PDneGv+duMr93dQuw2bzfCVZz9M0kizJ47sPYpSZ4hVJu5GeIu3DWhAP52R2HN4DYK2uJtVG/zuAax8t6rJi3XuDchbhJFJPYw1HJ2keAKgA/P3WQeizPHUeeWV/KdUFtf+ybUCm6MyHfTSyzwU1c7bd0r8ehNMLysZYoEcRqlIfUXUMVE8DKrJCm9NdNY6i12XmTTJO3TtVIjkz+FWbysMXrL6iBHsMbybhdZvw1lxvlTSN28yujPY1fVFmU+FJVGVfvs26r/zyWpLCQnoX9ysl6ePFUdf60x/krEBrpLoilmOJJ0mNwu0V7O5xuOCDpAUDmAkqoISEH1NaBugKB0uyHch+bdr+BvOf8flcGPdXJMqgbqZEF+wlTKuTgMa6TBKb3Rnau6wLAsCo03lI1XpdHxDLXRiP0CfFUU6qO+Ett5JguHvMnE4aXug1q5bLsUxUjeZdDHH/kay1RWSiMSypSoxhQBS15RTF5Rue5fXa9wFFV/qPCfnKiZc45nZL3vpv7SAwcc/ev+2rkZTf++vXS+3U6d0T9Xd9O7wcYQeuewHEdPRa5+2BRWhS4f9nqgT0dHlXt2SQ+z/JO7USX50CsVAfJpGBIPqQTku8pHHU7pgPY0lAyFOU9cCh9CdIuMqjuq7zvqe8qLqhTCdi1/Pscz8qEMv2dhJV+rfPJPLvbu8n4PLDgD0oL1zbIfHiGPg5xkyXQ4MhFSRmYOI2mIXdK35FPmcF8+ia2BZQ0A0f5/5bSunF+9fwEwV6GL</source>
+  </file>
+  <file path="src/Php/Api/ApiException.php" generated-path="src.Php.Api.ApiException.html" hash="ff424ccce928154a676dc779bbbffcef" package="Default">
+    <docblock line="0">
+      <description>Class responsible of API Exception handling</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="copyright" line="0" description="(c) Modgen s.r.o."/>
+      <tag name="author" line="0" description="Mirek Ratman"/>
+      <tag name="since" line="0" description="2015-06-22"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Php\Api" line="12" package="Default">
+      <extends>\Exception</extends>
+      <name>ApiException</name>
+      <full_name>\Php\Api\ApiException</full_name>
+      <docblock line="12">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="12" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="20" package="Default">
+        <name>__construct</name>
+        <full_name>\Php\Api\ApiException::__construct()</full_name>
+        <docblock line="20">
+          <description>Class constructor</description>
+          <long-description></long-description>
+          <tag name="param" line="20" description="" type="string" variable="$message">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="20" description="" type="integer" variable="$code">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="20" description="" type="\Exception" variable="$previous">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$message</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$code</name>
+          <default>0</default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$previous</name>
+          <default>null</default>
+          <type>\Exception</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="25" package="Default">
+        <name>__toString</name>
+        <full_name>\Php\Api\ApiException::__toString()</full_name>
+        <docblock line="25">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="30" package="Default">
+        <name>__toJson</name>
+        <full_name>\Php\Api\ApiException::__toJson()</full_name>
+        <docblock line="30">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="12" code="PPC:ERR-50005">No summary for class \Php\Api\ApiException</error>
+      <error line="25" code="PPC:ERR-50008">No summary for method __toString()</error>
+      <error line="30" code="PPC:ERR-50008">No summary for method __toJson()</error>
+    </parse_markers>
+    <source>eJyFUstu2zAQvPMrFoGAyIb8qIH24NR5oOghRQ0YbW5xYTD0WmIrLwmSKhIE+veQtCQrTh+8SLM7nJ1Z6eOVLjSbDIcMhvCp5NaCQasVWflQIqgd3Kxu4fOjQO2kIig4bUtJeaBfC6WfjMwLB6kYwFJtcySwYzNW49jnlSuUgaU0+Au+cbfnFOtWkkCYTd+9H00/jGazWCylQLIIdwXC8vYOvjY49WDgGRPGiO+9N+7vrgq9vtHygjERPfv3o0d8dEhbC+uuxJ4Z+BNjhtNGFT6nM5VwyrSNa80N34Mv+5SQ+IGW53jSleQwRwOJUNvT3nEqJNrgb6kq21Am8amrB58VdhWJyNpsOhtpOy87SMMCptkfFX2HqrIcRMVDuqjNDZKbz/+hmfVFFgcZuILEFdKOLnN0q6abDmB+GHIR9Wv2F/tOfY/bSk/dGHSVITi7f27Uw/z6xxxa3Dirs66yk2Uf+l8N6zWd/dfBF6vozfxEVc4vihvDn9KuGs55cHIOi0voOcteUxpzfVa7ydfE4LnPCviEEnL0KQF3jGa/vY399Gk2SMFUGkIcv0D9AqtZFpQ=</source>
+  </file>
+  <file path="usage/boomarks.php" generated-path="usage.boomarks.html" hash="1e33d776bef9b711bb62af93f1c9b8ca" package="Default">
+    <docblock line="0">
+      <description>Created by PhpStorm.</description>
+      <long-description>User: mirekratman
+Date: 25/05/15
+Time: 10:33</long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <source>eJzVVG1r2zAQ/u5fcS0BOyW106YhpS8ZbRJGRllLln4rGMU+x6Ky5UlyW2/0v+/kxMnaMdbBNphBYN/Lc89zJ9/ZuyItnGBvz4E9GClkBmNYVHCTFp+MVJlv7bca1QlkXOG9YiZjuTWOKfQEDvtBtx8c9K1lzjOyHHRPej36DBxnMptdz8LZ5OZ6Np9+fO9Nwourq/apo/BzSWAQhuPpLAzBh93A9wOtokBIFqPyidTuqePEVCOMMWGlMKEh+C8yx1Cj8dzb+cglqAYrlHmE3hbQtYAGtQlYaVI/xgeLWWcEQatUogOteAEsj6F1jxUwoqNJMKnnOdQ5FA8JFwhsIR/Qp7wbgUwjlIXlBSbFlb/UPF9CJUsFLIpQa4gIB3PDmdCUZotEKcuXCN+TASO3haioxRM839RrRYJpfVHwkeAEBueQ46MdzB3Z7lZGbyOlU+voQEI10crEKJWwe1YoHNpWGlXBVwfoCYIZUguBRLCF1YNPLCsErp0jmWWEbK8BRqwkv0xAY1QqbiqgG6Jlrn2Yp1xDhiaVMZQ5zQweuRCAyiI+ppL6YgtAomQG40vY2dlZF2i6SIcbiKjzSSlEBY2/UDw3ofJe6d8fKkt7vGbtGVVi2wpdZV1KmTF1rxs1urb/FIvF8TrDY0qxyqvDm8clcmoau3A+BJdJM9ALJvXAMJ3Y43ZeRnODWRNt3/cPe0evY+zt1Yao1WEHR71+97jbP+5uotr1GymCP8ZcDiSrdMx0fpwM2Btod7t/jbbg2kypSDMnb9uptyXbJbRNfi3t1xgxCjT4nw7998j/07mvfkCegNeKcVEuaU/9QH9J/631ee32egm9UFvn7Q/D0MgPtF08i2oDngnceaYVYaIUvLtm9dGZPEVYGC5zaGEDuYGz6++ZMr8Bswn/Ng==</source>
+  </file>
+  <file path="usage/items.php" generated-path="usage.items.html" hash="6bf339412466d01ae365aec2de4998eb" package="Default">
+    <docblock line="0">
+      <description>Created by PhpStorm.</description>
+      <long-description>User: mirekratman
+Date: 25/05/15
+Time: 10:33</long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <source>eJztWG1P4zgQ/kx/xQCVElBpWqCnXXbhBBQhTuhAhb1PlSI3mTa+zdvZDtA78d9vnLeGpqWF3T3dh61ASu2ZZ2aex57Y/fxr7MUNa3e3AbtwLpApdGE0hVsvvlORCNp6/ItEcQQBF/hVMBWwUA/2yfQI9ntWp2d1e3rkngc00u0cHRzQV6vRuBgMbgb24OL2ZnB/9fuleWGfXl/vfGoI/CshMLDt/tXAtqENW1a7bUnhWH7EXBRtSmrrU6PhUgzbxTFLfGUrgv87CtGWqEzjy/25QVAFlh2FDpozQEMDKpTKYony2i4+aMzUw7KaifBb0HRHwEIXml9xCozSkVQwVc9DSH3IHsbcR2Cj6AHb5HfrI5MISazzAuVhNp9IHk5gGiUCmOOglOAQDoaKM1+Smw7ieCycIFSTARXNAlFQjefzsIzXdHwm5WnMz31OYHAMIT5qYYY0NswGzbKUVlpHC8YUE3WZ6HgRbH2OBZ5oKpWYwj8NoI9lDZAoBCqCjXQ9+MSC2Md88jwKAkLWywAdltB8NAaJTiK4mgKtEBmFsg33HpcQoPIiF5KQNINH7vuAQiM+ehHxogPAWEQB9M9gc3MzD1CwSP9cgUPMjxPfn0IxHwseKluYc/XvnQiddj/P2lQiwR1daOZ1pTCQ6XNW+DAchtvb23DqulodTtPDkIjQFksjMNfVOKahzfe6hsavQ15zqQpMuRrUJ/M0O3MxXB99VOvn6GpzrKVZoYF8oxiF4igLbVcwU3hM16boNncwDXxSgtEmlY7gseJRaLTAkIr8J0v4u0SlapFpB4yj1eEnqKrhr8hpUQrrByaS3hqVXF6TEt9K6UzR11gtRa6p+PZ6Xoqo62FCsKmZeumPEbIADTg+KaVszebYA+M+G/m5wSiizc7CqkU17yUglJuTA2SP1QCui242p5u+VLSGjXR6Z23e1+KhxvyMioyBVqXY12Mzan7vjH/q+wtWV3VDPzA/WbWHv1d3ey+X/4M1pdhE5nOofthiu6t2kUyZ1ezIrIP8kZqXCrQWU1R+dFJXsUeHHjiUS+jK7brLqJpDgYP9yzN6QVMGdeo2NjbI+E96w9sYOpGLxWbgqXvrULbSB1o6dXYrSXc/9j7WKa4aHB70Oh86vQ+ddbf1ukTPtvRaXC/kdAmVtZJrJf64HrW4R7wa5f1Hibz13FAopisH+ktPMLAHktN5go85nQ8f2XS9Y8XP/rGEoL3ual54SLevtHnME5KG526xbcuF/tIgYy03mbWB7i+XZ/OmFRK1tT5hz1m8IDFFvIsCOunPhvVtgd/Oopxd0snO8ZO0ZhmjQ2vHSVeVpMtKEjrp43wm39COqoJlRVM3avf2a8Wmum1s6C+pVdmSjNJwJ9dxlYz73yyjvj2SlGU2GexPLb+jlpU9m7P9irovLmUSzGxvtTJZdt7SWssDZbE9C23/w/dE3tL5GMymi6NkAsew6JLT13Pkkf9S8CJe6rd3Ytsq+o1ULN8/zxr+me7xyvHAHBa/T9D/xZOD2TpqYgFZwunfKJ7J81/4J3Kn</source>
+  </file>
+  <file path="src/Php/Api/Helpers/Curl.php" generated-path="src.Php.Api.Helpers.Curl.html" hash="74cc22537a17d609ebd7231212073433" package="Default">
+    <docblock line="0">
+      <description>Class responsible of Modgen API calls through CURL</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="copyright" line="0" description="(c) Modgen s.r.o. 2015"/>
+      <tag name="author" line="0" description="Mirek Ratman"/>
+      <tag name="since" line="0" description="2015-05-25"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+    </docblock>
+    <namespace-alias name="CurlResult">\Php\Api\Helpers\CurlResult</namespace-alias>
+    <class final="false" abstract="false" namespace="Php\Api\Helpers" line="14" package="Default">
+      <extends/>
+      <name>Curl</name>
+      <full_name>\Php\Api\Helpers\Curl</full_name>
+      <docblock line="14">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="14" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="Php\Api\Helpers" line="19" package="Default">
+        <name>$curl</name>
+        <full_name>\Php\Api\Helpers\Curl::curl</full_name>
+        <default>''</default>
+        <docblock line="19">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api\Helpers" line="24" package="Default">
+        <name>$postData</name>
+        <full_name>\Php\Api\Helpers\Curl::postData</full_name>
+        <default>''</default>
+        <docblock line="24">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api\Helpers" line="29" package="Default">
+        <name>$headerType</name>
+        <full_name>\Php\Api\Helpers\Curl::headerType</full_name>
+        <default>'x-www-form-urlencoded'</default>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api\Helpers" line="34" package="Default">
+        <name>$debug</name>
+        <full_name>\Php\Api\Helpers\Curl::debug</full_name>
+        <default></default>
+        <docblock line="34">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="39" package="Default">
+        <name>getPostData</name>
+        <full_name>\Php\Api\Helpers\Curl::getPostData()</full_name>
+        <docblock line="39">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="39" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="47" package="Default">
+        <name>setPostData</name>
+        <full_name>\Php\Api\Helpers\Curl::setPostData()</full_name>
+        <docblock line="47">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="47" description="" type="string" variable="$postData">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$postData</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="55" package="Default">
+        <name>getHeaderType</name>
+        <full_name>\Php\Api\Helpers\Curl::getHeaderType()</full_name>
+        <docblock line="55">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="55" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="63" package="Default">
+        <name>setHeaderType</name>
+        <full_name>\Php\Api\Helpers\Curl::setHeaderType()</full_name>
+        <docblock line="63">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="63" description="" type="string" variable="$headerType">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$headerType</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="71" package="Default">
+        <name>getDebug</name>
+        <full_name>\Php\Api\Helpers\Curl::getDebug()</full_name>
+        <docblock line="71">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="71" description="" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="79" package="Default">
+        <name>setDebug</name>
+        <full_name>\Php\Api\Helpers\Curl::setDebug()</full_name>
+        <docblock line="79">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="79" description="" type="boolean" variable="$debug">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$debug</name>
+          <default></default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="90" package="Default">
+        <name>addCall</name>
+        <full_name>\Php\Api\Helpers\Curl::addCall()</full_name>
+        <docblock line="90">
+          <description>Method will add CURL request</description>
+          <long-description></long-description>
+          <tag name="param" line="90" description="&lt;ul&gt;&#10;&lt;li&gt;method to call&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$method">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="90" description="&lt;ul&gt;&#10;&lt;li&gt;URL to call&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$url">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="90" description="" type="void">
+            <type>void</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$method</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$url</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="148" package="Default">
+        <name>process</name>
+        <full_name>\Php\Api\Helpers\Curl::process()</full_name>
+        <docblock line="148">
+          <description>Method will execute CURL request</description>
+          <long-description></long-description>
+          <tag name="return" line="148" description="" type="\Php\Api\Helpers\CurlResult">
+            <type>\Php\Api\Helpers\CurlResult</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="14" code="PPC:ERR-50005">No summary for class \Php\Api\Helpers\Curl</error>
+      <error line="39" code="PPC:ERR-50008">No summary for method getPostData()</error>
+      <error line="47" code="PPC:ERR-50008">No summary for method setPostData()</error>
+      <error line="55" code="PPC:ERR-50008">No summary for method getHeaderType()</error>
+      <error line="63" code="PPC:ERR-50008">No summary for method setHeaderType()</error>
+      <error line="71" code="PPC:ERR-50008">No summary for method getDebug()</error>
+      <error line="79" code="PPC:ERR-50008">No summary for method setDebug()</error>
+      <error line="19" code="PPC:ERR-50007">No summary for property $curl</error>
+      <error line="24" code="PPC:ERR-50007">No summary for property $postData</error>
+      <error line="29" code="PPC:ERR-50007">No summary for property $headerType</error>
+      <error line="34" code="PPC:ERR-50007">No summary for property $debug</error>
+    </parse_markers>
+    <source>eJzFV21v4kYQ/s6vGJ0iYSKc3J10UgVtWmp8TSQCFMy3SNFiD9g9s+vurkOiU/57Z21DHDAmRJG6XwzreeblmZdd//p7EiaNy/PzBpyDEzOlQKJKBFfRPEYQC7gVwRI59MY34LM4VqBDKdJlCM5sMjCoP3yRPMloGWqw/NZGXl3IC3EBXz9/+ZYJsVSHQsJtJPEHTJheMZ7tq4j7mInZn7/ZX3PhOPKRKwQvRLi98WBQ/LfoT4skLhsNzlbkJyPsOEzuekl0d41xglJ1G41U7e3eOamMJ6jSWJOAnwVqtho/G0Dr8jx7GNsPTMIqesQA7EwCIq40IyczCTJtHomMHphGOPONxG/QbJLWGkXj0dSDgGlWqSQRSvfpZY0ipWXEl6RJPyVZWkJkAUpKBtPAEQPKi4A5gkJdaSOX9wyarDza6/XaXgi5sikA5L4IMKiLoVJngPN0uQW9oCTqVPLC52K3gKZzyi0sUu7rSHBYoh4XwVutTCLPh1mFljMdRsq+2nDUzd4/7xtNmGSrDU9bSmutq5L1LWLXjR37xN7ZUV9OIuB6m5kjFLyk8I0kvACO0VDyoYQ6QMWrUjp7g1dFGHMhYjRtX89H31TVESqKyqtloTBXlOkxBnKrueyBuLN3JuRa67dIgy6AdRTHwIIgG5Pk/b8pKn0gT6scYkPxgzrZjNoD0mbi2GC07soVHD2IKKgNl9xyCGcVhtuZzgNBFwPOPO4jHmmrVTS8WWodaT+EjaJWCW6Wz2gQf/rL9T51Xu2bNZfIfnQrxK/dXv8UeTNaK+QzhymvItFWKZR2lo/R2Ls3uDZ8aXX3oNECNpBX82k3vJNMfb9xB/1pGyoV7/vwfAIBs/fFPzsQ/kFDfXfgeu57bDmzqTe6nbh/z1xD+kbTKca9Sc+psn0QQHZvRsPpKRBnNBy6zknVOu55zvVxwPN+z1A7axGLNUpLYbzodHaOgr1yyw3+owR/TwquPW9sWsudtIFJyZ6sylo2q+kIrpFr2zjSAZYkND2YmRyXxnqzfRjZ831MtO2ETJIzHUj1wv6lDrAxNUC+1GEHmnBhBh1dSapbsFLT/u4plVV5F9qhOMAFo6vj/8Z79X3t5ER8GHulej7KAD2KE6b7dtDE9WaTITX9cPrdULcZVPXnLT6in9LNtPLMLU7Hlw+B2jMykcJHpfbuIdnhsL0JbEu0uLTs9mwuaV/RiTsQS6s51Uxqc4qXPWy2t3I6oq8azVaJJ6jg0aO/ltkz46DM/la/zCIhVziuS6FZJelCxr4ivif5tx3+KYInK0uCoaycgtYRpEOVlyMp6ogvxH7+bobfR1nd3zujvtvaTbsfC4WvTHY/iF2XBx/A7d6VUxafjfnr5/8AVXkFLQ==</source>
+  </file>
+  <file path="src/loader.php" generated-path="src.loader.html" hash="6112eed21281f9fad0694c3e30fa3da7" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJxVjk1LxDAQhu/5FcOy0G5ZEnexl1bx4F68iPhxWwixnbrFNK2TRBTZ/25S3G2dw0CevHneXN0Mh4GJLGOQwS2hcljD6zc8HIYn11PHI3+xSAV0LeE7KdcpE+EuRAvYbsVFLjZ5JM9tF8gmLy7jUTBG+OHDI9mbCkHK3d2jlMAhEZyLTzR1T0J51+te1Tx8IymZHbQ8IUn41lqHlDbeVK7tDaTLSitr71WHK/hhEGbZtBpNAHD9ryIJ2zoKkkGrCtNkv0/Wka9hLuGwiNWLcpS1DaTRJ/ErNNv0LF+d6saUqbSvcXZbTnfBMOrPiqls7ohD6DwZcORxEhzZtP8CjdI2JI6r8hcma33v</source>
+  </file>
+  <file path="usage/series.php" generated-path="usage.series.html" hash="a26ab0dc31bfd7e77542accf89b9fac3" package="Default">
+    <docblock line="0">
+      <description>Created by PhpStorm.</description>
+      <long-description>User: mirekratman
+Date: 25/05/15
+Time: 10:33</long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <source>eJzNU9tO20AQffdXDCiSDUrshBAJcUlFk6hKhQoK4Q3J2tjjeMt6191dA27Fv3fWuVCghddashLPzjlnzuzM6acyL71of9+DfRhpZBZTWNRwlZfXVukidPEbg/oYCq7xTjNbMOmCY0o9hoNB1B1EvYGLzHlBkV73uN+nz8jzJrPZ5SyeTa4uZ/Ppty/BJD6/uNg78TT+qIgM4ng8ncUxhLAbhWFkdBIJxVLUIRW1e+J5KWnEKWasEja2RP9TSYwN2sC/mY98otpwxUomGDwT+o7QorERq2wepnjvOBtEFLUqLdrQShfAZAqtO6yBUTmGDJN7LqHBUD5kXCCwhbrHkHBXAplBqEpXF9gcV+eV4XIJtao0sCRBYyAhHpSWM2EI5kSSnMklwp/FgFXPQiTq+ASXW71WIpgx5yUfCU5kcAYSH9zF3FLsdhUMtlbajY82ZKSJziYmuYLd01Lj0LXS6hp+eUBPFM2QWghkgi2cH3xkRSlwfThSRUHMbgwwYRWdqwwMJpXmtgaaEKOkCWGecwMF2lylUEm6M3jgQgBqx/iQK+qLE4BMqwLGn2FnZ2ctsOkivdxCQp3PKiFq2JyXmksb6+CV/85Qu7LH66oDqyvcc0bXsGvUHM3KDFLfXfSfVCxNV/mBb9xvp+c7rncxghu7BlEufCgwlVa9FmnToGlWBw148/jcYjGvS/ThbLj68ttvM6bp83nnoH/4OsftR5PRO+wPukfdwVF3m7DX/HtT9ne6yxhlolJ8z++UFF906kP7KQq0+Fd0+7/qwLuVvxyO1aDxDIJWiotqSQv5Br2kAXVnNCHrbXsh1uA6wzi26iu1PtjM3JNjf6JdsEkOwe1mx+mdPCZYWq4ktHBDuaVze/5EyN/Fdrvg</source>
+  </file>
+  <file path="src/Php/Api/Client.php" generated-path="src.Php.Api.Client.html" hash="32792b4c70f7e104d8ccce4fbc86db78" package="Default">
+    <docblock line="0">
+      <description>Class responsible of Modgen API communication</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="copyright" line="0" description="(c) Modgen s.r.o."/>
+      <tag name="author" line="0" description="Mirek Ratman"/>
+      <tag name="since" line="0" description="2015-06-23"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+      <tag name="todo" line="0" description="handle better RestfulEnum strings that are replaced durring URL creation (example change __itemid__ to %__itemid__% to make it more unique)"/>
+    </docblock>
+    <namespace-alias name="RestfulEnum">\Php\Api\Enums\RestfulEnum</namespace-alias>
+    <namespace-alias name="Property">\Php\Api\Helpers\Property</namespace-alias>
+    <namespace-alias name="Roles">\Php\Api\Helpers\Roles</namespace-alias>
+    <namespace-alias name="Debugger">\Php\Api\Helpers\Debugger</namespace-alias>
+    <namespace-alias name="Direct">\Php\Api\Transport\Direct</namespace-alias>
+    <namespace-alias name="Transport">\Php\Api\Transport\Transport</namespace-alias>
+    <namespace-alias name="ExceptionsEnum">\Php\Api\Enums\ExceptionsEnum</namespace-alias>
+    <namespace-alias name="ApiException">\Php\Api\ApiException</namespace-alias>
+    <namespace-alias name="CurlResult">\Php\Api\Helpers\CurlResult</namespace-alias>
+    <class final="false" abstract="false" namespace="Php\Api" line="23" package="Default">
+      <extends/>
+      <name>Client</name>
+      <full_name>\Php\Api\Client</full_name>
+      <docblock line="23">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="23" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="Php\Api" line="28" package="Default">
+        <name>$host</name>
+        <full_name>\Php\Api\Client::host</full_name>
+        <default>'https://rapi.modgen.net'</default>
+        <docblock line="28">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api" line="33" package="Default">
+        <name>$db</name>
+        <full_name>\Php\Api\Client::db</full_name>
+        <default>''</default>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api" line="38" package="Default">
+        <name>$key</name>
+        <full_name>\Php\Api\Client::key</full_name>
+        <default>''</default>
+        <docblock line="38">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api" line="43" package="Default">
+        <name>$transport</name>
+        <full_name>\Php\Api\Client::transport</full_name>
+        <default></default>
+        <docblock line="43">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="Php\Api" line="48" package="Default">
+        <name>$debug</name>
+        <full_name>\Php\Api\Client::debug</full_name>
+        <default></default>
+        <docblock line="48">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="53" package="Default">
+        <name>getHost</name>
+        <full_name>\Php\Api\Client::getHost()</full_name>
+        <docblock line="53">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="53" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="61" package="Default">
+        <name>setHost</name>
+        <full_name>\Php\Api\Client::setHost()</full_name>
+        <docblock line="61">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="61" description="" type="string" variable="$host">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$host</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="69" package="Default">
+        <name>getDb</name>
+        <full_name>\Php\Api\Client::getDb()</full_name>
+        <docblock line="69">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="69" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="77" package="Default">
+        <name>setDb</name>
+        <full_name>\Php\Api\Client::setDb()</full_name>
+        <docblock line="77">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="77" description="" type="string" variable="$db">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$db</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="85" package="Default">
+        <name>getKey</name>
+        <full_name>\Php\Api\Client::getKey()</full_name>
+        <docblock line="85">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="85" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="93" package="Default">
+        <name>setKey</name>
+        <full_name>\Php\Api\Client::setKey()</full_name>
+        <docblock line="93">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="93" description="" type="string" variable="$key">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$key</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="101" package="Default">
+        <name>getTransport</name>
+        <full_name>\Php\Api\Client::getTransport()</full_name>
+        <docblock line="101">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="101" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="109" package="Default">
+        <name>setTransport</name>
+        <full_name>\Php\Api\Client::setTransport()</full_name>
+        <docblock line="109">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="109" description="" type="mixed" variable="$transport">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$transport</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="122" package="Default">
+        <name>getDebug</name>
+        <full_name>\Php\Api\Client::getDebug()</full_name>
+        <docblock line="122">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="122" description="" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="130" package="Default">
+        <name>setDebug</name>
+        <full_name>\Php\Api\Client::setDebug()</full_name>
+        <docblock line="130">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="130" description="" type="boolean" variable="$debug">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$debug</name>
+          <default></default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="142" package="Default">
+        <name>__construct</name>
+        <full_name>\Php\Api\Client::__construct()</full_name>
+        <docblock line="142">
+          <description>Class constructor</description>
+          <long-description></long-description>
+          <tag name="param" line="142" description="&lt;ul&gt;&#10;&lt;li&gt;Modgen API host&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$host">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="142" description="&lt;ul&gt;&#10;&lt;li&gt;DB ID where data will be stored&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$db">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="142" description="&lt;ul&gt;&#10;&lt;li&gt;unique API key&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$key">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="142" description="&lt;ul&gt;&#10;&lt;li&gt;unique API key&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$key">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$host</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$db</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$key</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$debugMode</name>
+          <default>false</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="165" package="Default">
+        <name>addItem</name>
+        <full_name>\Php\Api\Client::addItem()</full_name>
+        <docblock line="165">
+          <description>Method will add item to DB</description>
+          <long-description></long-description>
+          <tag name="param" line="165" description="&lt;ul&gt;&#10;&lt;li&gt;item ID name&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$itemId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="165" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="165" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="198" package="Default">
+        <name>listItems</name>
+        <full_name>\Php\Api\Client::listItems()</full_name>
+        <docblock line="198">
+          <description>Method will list items from DB</description>
+          <long-description></long-description>
+          <tag name="param" line="198" description="&lt;ul&gt;&#10;&lt;li&gt;An MQL expression to filter results. See API DOC -&gt; 2.1.2 LIST ITEMS&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$filter">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="198" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="198" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$filter</name>
+          <default>''</default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="231" package="Default">
+        <name>deleteItem</name>
+        <full_name>\Php\Api\Client::deleteItem()</full_name>
+        <docblock line="231">
+          <description>Method will delete item from DB. Also other data will be deleted. See API DOCs for more info</description>
+          <long-description></long-description>
+          <tag name="param" line="231" description="&lt;ul&gt;&#10;&lt;li&gt;name of item ID&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$itemId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="231" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="231" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="262" package="Default">
+        <name>deleteItems</name>
+        <full_name>\Php\Api\Client::deleteItems()</full_name>
+        <docblock line="262">
+          <description>Method will delete items defined in $itemsList as a array of its names</description>
+          <long-description></long-description>
+          <tag name="param" line="262" description="&lt;ul&gt;&#10;&lt;li&gt;items list to delete&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$itemsList">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="262" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemsList</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="280" package="Default">
+        <name>insertItem</name>
+        <full_name>\Php\Api\Client::insertItem()</full_name>
+        <docblock line="280">
+          <description>Method will insert item with its values to DB</description>
+          <long-description></long-description>
+          <tag name="param" line="280" description="&lt;ul&gt;&#10;&lt;li&gt;data to add&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$data">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="280" description="&lt;ul&gt;&#10;&lt;li&gt;definition of field name which represents main identificator&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$idField">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="280" description="&lt;ul&gt;&#10;&lt;li&gt;create automatically item&lt;/li&gt;&#10;&lt;/ul&gt;" type="boolean" variable="$cascadeCreate">
+            <type>boolean</type>
+          </tag>
+          <tag name="return" line="280" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="280" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$data</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$idFiled</name>
+          <default>'id'</default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$cascadeCreate</name>
+          <default>true</default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="338" package="Default">
+        <name>addItemProperty</name>
+        <full_name>\Php\Api\Client::addItemProperty()</full_name>
+        <docblock line="338">
+          <description>Method will add one item property and its type to DB</description>
+          <long-description></long-description>
+          <tag name="param" line="338" description="&lt;ul&gt;&#10;&lt;li&gt;name of the property&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$propertyName">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="338" description="&lt;ul&gt;&#10;&lt;li&gt;type of property (int, double, string, boolean, timestamp, set). See API DOCs for details.&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$propertyType">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="338" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="338" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$propertyName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$propertyType</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="373" package="Default">
+        <name>addItemProperties</name>
+        <full_name>\Php\Api\Client::addItemProperties()</full_name>
+        <docblock line="373">
+          <description>Extra API CLient method will set item properties base on given list of propertyName=&gt;propertyType and add necessary roles</description>
+          <long-description></long-description>
+          <tag name="param" line="373" description="&lt;ul&gt;&#10;&lt;li&gt;list of properties to set (int, double, string, boolean, timestamp, set, price)&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$properties">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="373" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$properties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="402" package="Default">
+        <name>getItemPropertyInfo</name>
+        <full_name>\Php\Api\Client::getItemPropertyInfo()</full_name>
+        <docblock line="402">
+          <description>Method will get item property information</description>
+          <long-description></long-description>
+          <tag name="param" line="402" description="&lt;ul&gt;&#10;&lt;li&gt;property name to delete&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$propertyName">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="402" description="" type="\Php\Api\JSON">
+            <type>\Php\Api\JSON</type>
+          </tag>
+          <tag name="throws" line="402" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$propertyName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="433" package="Default">
+        <name>getItemProperties</name>
+        <full_name>\Php\Api\Client::getItemProperties()</full_name>
+        <docblock line="433">
+          <description>Method will receive item properties</description>
+          <long-description></long-description>
+          <tag name="return" line="433" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="433" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="466" package="Default">
+        <name>deleteItemProperty</name>
+        <full_name>\Php\Api\Client::deleteItemProperty()</full_name>
+        <docblock line="466">
+          <description>Method will delete item property</description>
+          <long-description></long-description>
+          <tag name="param" line="466" description="&lt;ul&gt;&#10;&lt;li&gt;property name to delete&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$propertyName">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="466" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="466" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$propertyName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="497" package="Default">
+        <name>deleteItemProperties</name>
+        <full_name>\Php\Api\Client::deleteItemProperties()</full_name>
+        <docblock line="497">
+          <description>Method will delete item properties defined in $propertiesNameList as a array of property names</description>
+          <long-description></long-description>
+          <tag name="param" line="497" description="&lt;ul&gt;&#10;&lt;li&gt;properties list to delete&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$propertiesNameList">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="497" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$propertiesNameList</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="512" package="Default">
+        <name>deleteAllItemProperties</name>
+        <full_name>\Php\Api\Client::deleteAllItemProperties()</full_name>
+        <docblock line="512">
+          <description>Method will delete all item properties</description>
+          <long-description></long-description>
+          <tag name="param" line="512" description="&lt;ul&gt;&#10;&lt;li&gt;properties name list to delete&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$propertiesNameList">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="512" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="533" package="Default">
+        <name>setItemValues</name>
+        <full_name>\Php\Api\Client::setItemValues()</full_name>
+        <docblock line="533">
+          <description>Method will set property role base on propertyName parameter</description>
+          <long-description></long-description>
+          <tag name="param" line="533" description="&lt;ul&gt;&#10;&lt;li&gt;item ID where its properties will be filled by values&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$itemId">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="533" description="&lt;ul&gt;&#10;&lt;li&gt;property name =&gt; value data set&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$data">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="533" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="533" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemId</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$data</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="572" package="Default">
+        <name>deleteItemValues</name>
+        <full_name>\Php\Api\Client::deleteItemValues()</full_name>
+        <docblock line="572">
+          <description>Method will add item to DB</description>
+          <long-description></long-description>
+          <tag name="param" line="572" description="&lt;ul&gt;&#10;&lt;li&gt;item ID to identify element where some properties will be deleted&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$itemId">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="572" description="&lt;ul&gt;&#10;&lt;li&gt;list of properties for which values will be deleted&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$properties">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="572" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="572" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+          <tag name="todo" line="572" description="handle right deletion for properties defined as 'SET'"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$properties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="608" package="Default">
+        <name>setItemRole</name>
+        <full_name>\Php\Api\Client::setItemRole()</full_name>
+        <docblock line="608">
+          <description>Method will set property role base on propertyName parameter</description>
+          <long-description></long-description>
+          <tag name="param" line="608" description="&lt;ul&gt;&#10;&lt;li&gt;property name needed to set role&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$propertyName">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="608" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="608" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$propertyName</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="651" package="Default">
+        <name>addSeries</name>
+        <full_name>\Php\Api\Client::addSeries()</full_name>
+        <docblock line="651">
+          <description>Method will add series to DB</description>
+          <long-description></long-description>
+          <tag name="param" line="651" description="&lt;ul&gt;&#10;&lt;li&gt;series ID&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$seriesId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="651" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="651" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$seriesId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="682" package="Default">
+        <name>listSeries</name>
+        <full_name>\Php\Api\Client::listSeries()</full_name>
+        <docblock line="682">
+          <description>Method will list series</description>
+          <long-description></long-description>
+          <tag name="return" line="682" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="682" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="714" package="Default">
+        <name>deleteSeries</name>
+        <full_name>\Php\Api\Client::deleteSeries()</full_name>
+        <docblock line="714">
+          <description>Method will delete series</description>
+          <long-description></long-description>
+          <tag name="param" line="714" description="&lt;ul&gt;&#10;&lt;li&gt;series ID&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$seriesId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="714" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="714" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$seriesId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="752" package="Default">
+        <name>addIntoSeries</name>
+        <full_name>\Php\Api\Client::addIntoSeries()</full_name>
+        <docblock line="752">
+          <description>Method will add series items</description>
+          <long-description></long-description>
+          <tag name="param" line="752" description="&lt;ul&gt;&#10;&lt;li&gt;series ID&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$seriesId">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="752" description="&lt;ul&gt;&#10;&lt;li&gt;list of elements required for series items&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$data">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="752" description="&lt;ul&gt;&#10;&lt;li&gt;create automatically item with empty fields when purchase of this item exists&lt;/li&gt;&#10;&lt;/ul&gt;" type="boolean" variable="$cascadeCreate">
+            <type>boolean</type>
+          </tag>
+          <tag name="description" line="752" description="key  itemType (string) - type of item (item,series)"/>
+          <tag name="description" line="752" description="key  itemId (string) - id of the purchased item"/>
+          <tag name="description" line="752" description="key  time (integer) - timestamp"/>
+          <tag name="return" line="752" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="752" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+          <tag name="todo" line="752" description="Fix &quot;cascadeCreate&quot; param name. Other methods use &quot;!cascadeCreate&quot;"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$seriesId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$data</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$cascadeCreate</name>
+          <default>true</default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="808" package="Default">
+        <name>listSeriesItems</name>
+        <full_name>\Php\Api\Client::listSeriesItems()</full_name>
+        <docblock line="808">
+          <description>Method will list series items</description>
+          <long-description></long-description>
+          <tag name="param" line="808" description="&lt;ul&gt;&#10;&lt;li&gt;series ID&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$seriesId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="808" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="808" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$seriesId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="844" package="Default">
+        <name>deleteSeriesItems</name>
+        <full_name>\Php\Api\Client::deleteSeriesItems()</full_name>
+        <docblock line="844">
+          <description>Method will delete series items</description>
+          <long-description></long-description>
+          <tag name="param" line="844" description="&lt;ul&gt;&#10;&lt;li&gt;list of elements required for series items to delete (below)&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$properties">
+            <type>array</type>
+          </tag>
+          <tag name="description" line="844" description="key seriesId (string) - id of the user"/>
+          <tag name="description" line="844" description="key  itemType (string) - type of item"/>
+          <tag name="description" line="844" description="key  itemId (string) - id of the purchased item"/>
+          <tag name="description" line="844" description="key  time (integer) - timestamp"/>
+          <tag name="return" line="844" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="844" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$seriesId</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$properties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="900" package="Default">
+        <name>addUser</name>
+        <full_name>\Php\Api\Client::addUser()</full_name>
+        <docblock line="900">
+          <description>Method will add user</description>
+          <long-description></long-description>
+          <tag name="param" line="900" description="&lt;ul&gt;&#10;&lt;li&gt;user id to add&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$userId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="900" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="900" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="933" package="Default">
+        <name>mergeUsers</name>
+        <full_name>\Php\Api\Client::mergeUsers()</full_name>
+        <docblock line="933">
+          <description>Method will merge users</description>
+          <long-description></long-description>
+          <tag name="param" line="933" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the target (final) user&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$targetUserId">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="933" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the user which will be merget with $targetUserId. This user ID will be deleted (is merged) from DB&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$userId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="933" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="933" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$targetUserId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$userId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="967" package="Default">
+        <name>listUsers</name>
+        <full_name>\Php\Api\Client::listUsers()</full_name>
+        <docblock line="967">
+          <description>Method will list users</description>
+          <long-description></long-description>
+          <tag name="return" line="967" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="967" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="999" package="Default">
+        <name>deleteUser</name>
+        <full_name>\Php\Api\Client::deleteUser()</full_name>
+        <docblock line="999">
+          <description>Method will delete user</description>
+          <long-description></long-description>
+          <tag name="param" line="999" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the user which will be deleted&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$userId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="999" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="999" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1041" package="Default">
+        <name>addDetailView</name>
+        <full_name>\Php\Api\Client::addDetailView()</full_name>
+        <docblock line="1041">
+          <description>Method will add detail views</description>
+          <long-description></long-description>
+          <tag name="param" line="1041" description="&lt;ul&gt;&#10;&lt;li&gt;list of elements required for detailview (below)&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$data">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="1041" description="&lt;ul&gt;&#10;&lt;li&gt;create automatically item with empty fields when purchase of this item exists&lt;/li&gt;&#10;&lt;/ul&gt;" type="boolean" variable="$cascadeCreate">
+            <type>boolean</type>
+          </tag>
+          <tag name="description" line="1041" description="key  userId (string) - id of the user"/>
+          <tag name="description" line="1041" description="key  itemId (string) - id of the purchased item"/>
+          <tag name="description" line="1041" description="key  timestamp (integer) - timestamp"/>
+          <tag name="description" line="1041" description="key  duration (integer) - duration"/>
+          <tag name="return" line="1041" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="1041" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+          <tag name="todo" line="1041" description="Fix &quot;cascadeCreate&quot; param name. Other methods use &quot;!cascadeCreate&quot;"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$data</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$cascadeCreate</name>
+          <default>true</default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1097" package="Default">
+        <name>listItemDetailViews</name>
+        <full_name>\Php\Api\Client::listItemDetailViews()</full_name>
+        <docblock line="1097">
+          <description>Method will list item detail views</description>
+          <long-description></long-description>
+          <tag name="param" line="1097" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the item&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$itemId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="1097" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="1097" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1129" package="Default">
+        <name>listUserDetailViews</name>
+        <full_name>\Php\Api\Client::listUserDetailViews()</full_name>
+        <docblock line="1129">
+          <description>Method will list user detail views</description>
+          <long-description></long-description>
+          <tag name="param" line="1129" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the user&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$userId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="1129" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="1129" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1161" package="Default">
+        <name>deleteDetailView</name>
+        <full_name>\Php\Api\Client::deleteDetailView()</full_name>
+        <docblock line="1161">
+          <description>Method will delete detail views</description>
+          <long-description></long-description>
+          <tag name="param" line="1161" description="&lt;ul&gt;&#10;&lt;li&gt;list of properties which will define detail view&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$properties">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="1161" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="1161" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$properties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1222" package="Default">
+        <name>addPurchase</name>
+        <full_name>\Php\Api\Client::addPurchase()</full_name>
+        <docblock line="1222">
+          <description>Method will add purchase</description>
+          <long-description></long-description>
+          <tag name="param" line="1222" description="&lt;ul&gt;&#10;&lt;li&gt;list of elements required for purchase (below)&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$data">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="1222" description="&lt;ul&gt;&#10;&lt;li&gt;create automatically item with empty fields when purchase of this item exists&lt;/li&gt;&#10;&lt;/ul&gt;" type="boolean" variable="$cascadeCreate">
+            <type>boolean</type>
+          </tag>
+          <tag name="description" line="1222" description="key  userId (string) - id of the user"/>
+          <tag name="description" line="1222" description="key  itemId (string) - id of the purchased item"/>
+          <tag name="description" line="1222" description="key  timestamp (integer) - timestamp"/>
+          <tag name="return" line="1222" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="1222" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+          <tag name="todo" line="1222" description="Fix &quot;cascadeCreate&quot; param name. Other methods use &quot;!cascadeCreate&quot;"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$data</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$cascadeCreate</name>
+          <default>true</default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1278" package="Default">
+        <name>listItemPurchases</name>
+        <full_name>\Php\Api\Client::listItemPurchases()</full_name>
+        <docblock line="1278">
+          <description>Method will list item purchases</description>
+          <long-description></long-description>
+          <tag name="param" line="1278" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the item&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$itemId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="1278" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="1278" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1310" package="Default">
+        <name>listUserPurchases</name>
+        <full_name>\Php\Api\Client::listUserPurchases()</full_name>
+        <docblock line="1310">
+          <description>Method will list user purchases</description>
+          <long-description></long-description>
+          <tag name="param" line="1310" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the user&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$userId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="1310" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="1310" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1342" package="Default">
+        <name>deletePurchase</name>
+        <full_name>\Php\Api\Client::deletePurchase()</full_name>
+        <docblock line="1342">
+          <description>Method will delete purchase</description>
+          <long-description></long-description>
+          <tag name="param" line="1342" description="&lt;ul&gt;&#10;&lt;li&gt;list of properties which will define purchase&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$properties">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="1342" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="1342" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$properties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1404" package="Default">
+        <name>addRating</name>
+        <full_name>\Php\Api\Client::addRating()</full_name>
+        <docblock line="1404">
+          <description>Method will add rating</description>
+          <long-description></long-description>
+          <tag name="param" line="1404" description="&lt;ul&gt;&#10;&lt;li&gt;list of elements required for detailview (below)&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$data">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="1404" description="&lt;ul&gt;&#10;&lt;li&gt;create automatically item with empty fields when purchase of this item exists&lt;/li&gt;&#10;&lt;/ul&gt;" type="boolean" variable="$cascadeCreate">
+            <type>boolean</type>
+          </tag>
+          <tag name="description" line="1404" description="key  userId (string) - id of the user"/>
+          <tag name="description" line="1404" description="key  itemId (string) - id of the purchased item"/>
+          <tag name="description" line="1404" description="key  timestamp (integer) - timestamp"/>
+          <tag name="description" line="1404" description="key  rating (double) - rating (from -1.0 to 1.0)"/>
+          <tag name="return" line="1404" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="1404" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+          <tag name="todo" line="1404" description="Fix &quot;cascadeCreate&quot; param name. Other methods use &quot;!cascadeCreate&quot;"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$data</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$cascadeCreate</name>
+          <default>true</default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1460" package="Default">
+        <name>listItemRatings</name>
+        <full_name>\Php\Api\Client::listItemRatings()</full_name>
+        <docblock line="1460">
+          <description>Method will list item ratings</description>
+          <long-description></long-description>
+          <tag name="param" line="1460" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the item&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$itemId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="1460" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="1460" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1492" package="Default">
+        <name>listUserRatings</name>
+        <full_name>\Php\Api\Client::listUserRatings()</full_name>
+        <docblock line="1492">
+          <description>Method will list user ratings</description>
+          <long-description></long-description>
+          <tag name="param" line="1492" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the user&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$userId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="1492" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="1492" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1524" package="Default">
+        <name>deleteRating</name>
+        <full_name>\Php\Api\Client::deleteRating()</full_name>
+        <docblock line="1524">
+          <description>Method will delete rating</description>
+          <long-description></long-description>
+          <tag name="param" line="1524" description="&lt;ul&gt;&#10;&lt;li&gt;list of properties which will define rating&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$properties">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="1524" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="1524" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$properties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1585" package="Default">
+        <name>addBoomark</name>
+        <full_name>\Php\Api\Client::addBoomark()</full_name>
+        <docblock line="1585">
+          <description>Method will add boomark</description>
+          <long-description></long-description>
+          <tag name="param" line="1585" description="&lt;ul&gt;&#10;&lt;li&gt;list of elements required for purchase (below)&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$data">
+            <type>array</type>
+          </tag>
+          <tag name="param" line="1585" description="&lt;ul&gt;&#10;&lt;li&gt;create automatically item with empty fields when purchase of this item exists&lt;/li&gt;&#10;&lt;/ul&gt;" type="boolean" variable="$cascadeCreate">
+            <type>boolean</type>
+          </tag>
+          <tag name="description" line="1585" description="key  userId (string) - id of the user"/>
+          <tag name="description" line="1585" description="key  itemId (string) - id of the purchased item"/>
+          <tag name="description" line="1585" description="key  timestamp (integer) - timestamp"/>
+          <tag name="return" line="1585" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="1585" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+          <tag name="todo" line="1585" description="Fix &quot;cascadeCreate&quot; param name. Other methods use &quot;!cascadeCreate&quot;"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$data</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$cascadeCreate</name>
+          <default>true</default>
+          <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1641" package="Default">
+        <name>listItemBoomarks</name>
+        <full_name>\Php\Api\Client::listItemBoomarks()</full_name>
+        <docblock line="1641">
+          <description>Method will list item boomarks</description>
+          <long-description></long-description>
+          <tag name="param" line="1641" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the item&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$itemId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="1641" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="1641" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1673" package="Default">
+        <name>listUserBoomarks</name>
+        <full_name>\Php\Api\Client::listUserBoomarks()</full_name>
+        <docblock line="1673">
+          <description>Method will list user boomarks</description>
+          <long-description></long-description>
+          <tag name="param" line="1673" description="&lt;ul&gt;&#10;&lt;li&gt;ID of the user&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$userId">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="1673" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="1673" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1705" package="Default">
+        <name>deleteBoomark</name>
+        <full_name>\Php\Api\Client::deleteBoomark()</full_name>
+        <docblock line="1705">
+          <description>Method will delete boomark</description>
+          <long-description></long-description>
+          <tag name="param" line="1705" description="&lt;ul&gt;&#10;&lt;li&gt;list of properties which will define boomark&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$properties">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="1705" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="throws" line="1705" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$properties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1769" package="Default">
+        <name>getUserBasedRecommendation</name>
+        <full_name>\Php\Api\Client::getUserBasedRecommendation()</full_name>
+        <docblock line="1769">
+          <description>Method will return user base recommendations</description>
+          <long-description></long-description>
+          <tag name="param" line="1769" description="&lt;ul&gt;&#10;&lt;li&gt;id of the user&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$userId">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="1769" description="&lt;ul&gt;&#10;&lt;li&gt;number of items that will be received&lt;/li&gt;&#10;&lt;/ul&gt;" type="integer" variable="$count">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="1769" description="&lt;ul&gt;&#10;&lt;li&gt;list of parameters required for recommendation&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$params">
+            <type>array</type>
+          </tag>
+          <tag name="description" line="1769" description="key  filterMql (string) - define MQL string for filtering - see API DOC"/>
+          <tag name="description" line="1769" description="key  boosterMql (string) - define MQL string for boostering - see API DOC"/>
+          <tag name="description" line="1769" description="key  $allowNonexistent (boolean) - see API DOC"/>
+          <tag name="description" line="1769" description="key  $diversity (double) - see API DOC"/>
+          <tag name="description" line="1769" description="key  $rotationRate (double) - see API DOC"/>
+          <tag name="description" line="1769" description="key  $rotationTime (double) - see API DOC"/>
+          <tag name="return" line="1769" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="1769" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$userId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$count</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1815" package="Default">
+        <name>getItemBasedRecommendation</name>
+        <full_name>\Php\Api\Client::getItemBasedRecommendation()</full_name>
+        <docblock line="1815">
+          <description>Method will return item base recommendations</description>
+          <long-description></long-description>
+          <tag name="param" line="1815" description="&lt;ul&gt;&#10;&lt;li&gt;id of the item&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$itemId">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="1815" description="&lt;ul&gt;&#10;&lt;li&gt;number of items that will be received&lt;/li&gt;&#10;&lt;/ul&gt;" type="integer" variable="$count">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="1815" description="&lt;ul&gt;&#10;&lt;li&gt;list of parameters required for recommendation&lt;/li&gt;&#10;&lt;/ul&gt;" type="array" variable="$params">
+            <type>array</type>
+          </tag>
+          <tag name="description" line="1815" description="key  filterMql (string) - define MQL string for filtering - see API DOC"/>
+          <tag name="description" line="1815" description="key  boosterMql (string) - define MQL string for boostering - see API DOC"/>
+          <tag name="description" line="1815" description="key  $allowNonexistent (boolean) - see API DOC"/>
+          <tag name="description" line="1815" description="key  $diversity (double) - see API DOC"/>
+          <tag name="description" line="1815" description="key  $rotationRate (double) - see API DOC"/>
+          <tag name="description" line="1815" description="key  $rotationTime (double) - see API DOC"/>
+          <tag name="return" line="1815" description="" type="array">
+            <type>array</type>
+          </tag>
+          <tag name="throws" line="1815" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$itemId</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$count</name>
+          <default></default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$params</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api" line="1857" package="Default">
+        <name>resetDatabase</name>
+        <full_name>\Php\Api\Client::resetDatabase()</full_name>
+        <docblock line="1857">
+          <description>Method will reset DB</description>
+          <long-description></long-description>
+          <tag name="param" line="1857" description="&lt;ul&gt;&#10;&lt;li&gt;delete confirmation&lt;/li&gt;&#10;&lt;/ul&gt;" type="boolean" variable="$confirm">
+            <type>boolean</type>
+          </tag>
+          <tag name="return" line="1857" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+          <tag name="throws" line="1857" description="" type="\Php\Api\ApiException">
+            <type>\Php\Api\ApiException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$confirm</name>
+          <default>false</default>
+          <type>boolean</type>
+        </argument>
+      </method>
+    </class>
+    <markers>
+      <todo line="572">handle right deletion for properties defined as 'SET'</todo>
+      <todo line="752">Fix "cascadeCreate" param name. Other methods use "!cascadeCreate"</todo>
+      <todo line="1041">Fix "cascadeCreate" param name. Other methods use "!cascadeCreate"</todo>
+      <todo line="1222">Fix "cascadeCreate" param name. Other methods use "!cascadeCreate"</todo>
+      <todo line="1404">Fix "cascadeCreate" param name. Other methods use "!cascadeCreate"</todo>
+      <todo line="1585">Fix "cascadeCreate" param name. Other methods use "!cascadeCreate"</todo>
+    </markers>
+    <parse_markers>
+      <error line="23" code="PPC:ERR-50005">No summary for class \Php\Api\Client</error>
+      <error line="53" code="PPC:ERR-50008">No summary for method getHost()</error>
+      <error line="61" code="PPC:ERR-50008">No summary for method setHost()</error>
+      <error line="69" code="PPC:ERR-50008">No summary for method getDb()</error>
+      <error line="77" code="PPC:ERR-50008">No summary for method setDb()</error>
+      <error line="85" code="PPC:ERR-50008">No summary for method getKey()</error>
+      <error line="93" code="PPC:ERR-50008">No summary for method setKey()</error>
+      <error line="101" code="PPC:ERR-50008">No summary for method getTransport()</error>
+      <error line="109" code="PPC:ERR-50008">No summary for method setTransport()</error>
+      <error line="122" code="PPC:ERR-50008">No summary for method getDebug()</error>
+      <error line="130" code="PPC:ERR-50008">No summary for method setDebug()</error>
+      <error line="844" code="PPC:ERR-50015">Argument $properties is missing from the Docblock of deleteSeriesItems</error>
+      <error line="28" code="PPC:ERR-50007">No summary for property $host</error>
+      <error line="33" code="PPC:ERR-50007">No summary for property $db</error>
+      <error line="38" code="PPC:ERR-50007">No summary for property $key</error>
+      <error line="43" code="PPC:ERR-50007">No summary for property $transport</error>
+      <error line="48" code="PPC:ERR-50007">No summary for property $debug</error>
+    </parse_markers>
+    <source>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</source>
+  </file>
+  <file path="usage/users.php" generated-path="usage.users.html" hash="c1fcf138033ad69dea8bfaa3155b83ba" package="Default">
+    <docblock line="0">
+      <description>Created by PhpStorm.</description>
+      <long-description>User: mirekratman
+Date: 25/05/15
+Time: 10:33</long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <source>eJydku1P2zAQxr/nrzhQpQZUEhhCnQpjYm01MaGBsvINKXLtS2Ph2JlfgGzif9+5tGWvbFolf+g5z++553wnb9u6TfLd3QR2YWyReRQw7+Cqbj95Y5ss1q8d2hE00uKtZb5hOhYn9OkIXh3l+0f5wVGszGRDlYP90eEh/c2TZFoUl0VZTK8ui9n5x/fptDy7uNg5Tix+DgSDspycF2UJGWznWZY7y3NlmECbUVPbx0kiyKMUWLGgfOkJ/8VoLB36tH89G/cJtWaVRnNMn4H9CPTofM6CrzOBd5G5VOR5L1g1gJ6YA9MCerfYAaN2HAWm9FLDUkPfQyUVApubO8xId6WQOYTQxr7A1/h0H5zUC+hMsMA4R+eAEwe1l0w5kkUTXjO9QPi+GfDm2YhMI09JvfHrccWcO2vlWEmCwRvQeB8f5oZqN0/FdBNlsMwxgIo8McZEXhvYPmktnsZRetvB1wTol+cF0giBQrB5zIMPrGkVri7HpmmIHNcAOQt0bypwyIOVvgPaEGe0y2BWSwcN+toICJreDO6lUoA2Eu9rQ3OJBlBZ08DkHWxtba0M1lOkIz1wmnwVlOpgfd9aqX1p05/y753a2PZk1XXqbcCdGHQli0u6juKWtT+CmBDx67TPjB+6OTNu6Jmr4ulH5L+JzdCwzgnm9OtqyJZKeFnaoF1gFLvfWg/gP5hKOv+E/GvnAhV6fDH5apqygrQncB4WtHW/cBb0CvGOHFcr9YPtUrd3WpbefKBd2fT1GPGP9OCe15DerBeZzvSBY+ul0dDDNXKDi8v8SMpvZO5+Hw==</source>
+  </file>
+  <file path="usage/detailviews.php" generated-path="usage.detailviews.html" hash="069b710756b17273947c2eac341d2943" package="Default">
+    <docblock line="0">
+      <description>Created by PhpStorm.</description>
+      <long-description>User: mirekratman
+Date: 25/05/15
+Time: 10:33</long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <source>eJzNVO9r2zAQ/e6/4loCcUpqp01DSn9kdE0YGWUtWbpPBaPY51hUljxJbuqN/u87uXGydoz1wwYzCOy7e+/eO0s6e1dkhRfu7XmwB5camcUEFhXcZMVnq3QeuPitQX0COdd4r5nNmXTBMZWewOEg7A3Cg4GLzHlOkYPeSb9Pn6HnTWaz61k0m9xcz+bTTx/8SXRxddU59TR+LYkMomg8nUURBLAbBkFodBwKxRLUAYnaPfW8hHpECaasFDayRP9NSYwMWr99O79sE1XDFSkZo78lbDtCi8aGrLRZkOCD46wRYdgqtehCK1kAkwm07rECRnIMGSb3XEKNoXpIuUBgC/WAAeFuBDKDUBZOF9gMn/Ol4XIJlSo1sDhGYyAmHpSWM2EI5prEGZNLhJ/FgFXbRtTU8QkuN/1asWDGXBT8UnAig3OQuHI/5o5id89Bf2OlW/voQko90dnEOFOwe1ZoHLlRWl3Bdw/oCcMZ0giBTLCF84OPLC8ErpOXKs+J2W0DjFlJeZWCwbjU3FZAO8QoaQKYZ9xAjjZTCZSS/hmsuBCA2jGuMkVzcQ0g1SqH8XvY2dlZN2imSItbiGnyaSlEBU2+0FzaSPuv/O+PtJM9Xqv2rS6x44yuYWO0jAv4wnFlGkumzv2WkCXJM8qBfKY1q/wa0TxtEqmnSRvOR9Bmyg7NgikztMykbrW7L6u5xbypdu/7h/2j1zVuFxtL6uqyg6P+oHfcGxz3NlWd+s05+4va1VCxyiTMyON0yN4gvNf7V8IFN3ZKPbbqjb+d1pvg7j56AX9t748sCQq0+N8OcL2peQp+K8FFuaTD/4uHJR0Gl/M7nfXJfmG5xu2Posiqj3Rk/WYmT47+ic6djTPw75r7hNbkMcbCciWhhQ3lhs7dKU+E/AGI19T7</source>
+  </file>
+  <file path="usage/purchases.php" generated-path="usage.purchases.html" hash="3a883ba6577b1e7f68bed326d7281fd4" package="Default">
+    <docblock line="0">
+      <description>Created by PhpStorm.</description>
+      <long-description>User: mirekratman
+Date: 25/05/15
+Time: 10:33</long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <source>eJzNVG1r2zAQ/u5fcS2BOCW106YhpS8ZXRJGRllLln4rGMU+x6Ky5ElyW2/0v+/kxknbMdYPG0wgsO/luec56XT2ocgKL9zb82APxhqZxQSWFVxnxVerdB44+41BfQI513inmc2ZdMYJhZ7A4SDsDcKDgbMseE6Wg95Jv0+/oedN5/OreTSfXl/NF7Mvn/xpdHF52Tn1NH4rCQyiaDKbRxEEsBsGQWh0HArFEtQBkdo99byEakQJpqwUNrIE/11JjAxav32zGLcJqsGKlIzR3wK2HaBFY0NW2ixI8N5h1hlh2Cq16EIrWQKTCbTusAJGdAwJJvVcQp1D8ZBygcCW6h4DyrsWyAxCWTheYDN89peGyxVUqtTA4hiNgZhwUFrOhKE0VyTOmFwhvCQDVm0LUVGHJ7jc1GvFghlzUfCx4AQG5yDxwR3MLdlun43+Rkq31tGFlGqik4lxpmD3rNA4cq20uoIfHtAKwzlSC4FEsKXTg48sLwSunWOV54TsrgHGrCS/SsFgXGpuK6AbYpQ0ASwybiBHm6kESklnBg9cCEDtEB8yRX1xBSDVKofJR9jZ2VkXaLpIm1uIqfNpKUQFjb/QXNpI+2/074+0oz1Zs/atLrHjhDawpaYmb+WY2v5bMJYkTYbPtGaVX8c3q0309Cxpw/kI2kzZoVkyZYaWmdTtdvd1NLeYN9Hue/+wf/Q2xt1fY4lbHXZw1B/0jnuD494mqlN/kSb4e9TVULHKJMzI43TI3sG71/tnvAU3dkZFGvLG3/bqfdnuIXqR/Vbcn0ESFGjx/+yet77KPAW/leCyXNHI/6JgRSPgfH6ns57nV4LrvP1RFFn1mQbVd7gu4MnBP9G02TgD/7Z5RWhPH2MsLFcSWthAbuDcS/JEmT8BD6fQtg==</source>
+  </file>
+  <file path="src/Php/Api/Helpers/Hmac.php" generated-path="src.Php.Api.Helpers.Hmac.html" hash="56c69c504bee855870eaec4f81e751af" package="Default">
+    <docblock line="0">
+      <description>Class responsible of Modgen API HMAC hashing</description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+      <tag name="copyright" line="0" description="(c) Modgen s.r.o. 2015"/>
+      <tag name="author" line="0" description="Mirek Ratman"/>
+      <tag name="since" line="0" description="2015-06-21"/>
+      <tag name="license" line="0" description="The MIT License (MIT)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Php\Api\Helpers" line="12" package="Default">
+      <extends/>
+      <name>Hmac</name>
+      <full_name>\Php\Api\Helpers\Hmac</full_name>
+      <docblock line="12">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="12" description="Default"/>
+      </docblock>
+      <constant namespace="Php\Api\Helpers" line="17" package="Default">
+        <name>HMAC_KEY_SIGN</name>
+        <full_name>\Php\Api\Helpers\Hmac::HMAC_KEY_SIGN</full_name>
+        <value>'hmac_sign'</value>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <constant namespace="Php\Api\Helpers" line="22" package="Default">
+        <name>HMAC_KEY_TIMESTAMP</name>
+        <full_name>\Php\Api\Helpers\Hmac::HMAC_KEY_TIMESTAMP</full_name>
+        <value>'hmac_timestamp'</value>
+        <docblock line="22">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="28" package="Default">
+        <name>__construct</name>
+        <full_name>\Php\Api\Helpers\Hmac::__construct()</full_name>
+        <docblock line="28">
+          <description>Class constructor</description>
+          <long-description></long-description>
+          <tag name="param" line="28" description="&lt;ul&gt;&#10;&lt;li&gt;unique API key&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$key">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$key</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="38" package="Default">
+        <name>hashQuery</name>
+        <full_name>\Php\Api\Helpers\Hmac::hashQuery()</full_name>
+        <docblock line="38">
+          <description>Hash given url using HMAC</description>
+          <long-description></long-description>
+          <tag name="param" line="38" description="&lt;ul&gt;&#10;&lt;li&gt;URL to hash&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$url">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="38" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$url</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Php\Api\Helpers" line="50" package="Default">
+        <name>checkAuth</name>
+        <full_name>\Php\Api\Helpers\Hmac::checkAuth()</full_name>
+        <docblock line="50">
+          <description>Hash given url using HMAC</description>
+          <long-description></long-description>
+          <tag name="param" line="50" description="&lt;ul&gt;&#10;&lt;li&gt;URL to hash&lt;/li&gt;&#10;&lt;/ul&gt;" type="string" variable="$url">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="50" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$string</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="12" code="PPC:ERR-50005">No summary for class \Php\Api\Helpers\Hmac</error>
+    </parse_markers>
+    <source>eJzNU8tq20AU3esrLsFUkonkONAu7KquCKE2jYqbuItCQEzUsWawNJrOo2CK/73zUORSu6HLaqFhrs4959yH3i444cFkPA5gDDcNkhIElrxjkj41GLotFN23GjPI1ytYFvkNECQJZbXFv686vhe0JgqiKn5GylSkXQrXV9PXDoS0Ip2Aggq8g3ukWsRcXFJWYQdLrt4k11MXbGiFmcSwIRiK1Qbu+ntkLrFBTIKAodY4RCZ3TfhjzunjEjccCzkPgspVsGxRFfwMwDyTsTu8WSYVJL4KSWsGO7wHy+YghtoeHmUx5cfbr+XD6sMnyCAkhrK0SaFReYlYUeNOoZb/C/tmVdw+bPJiPUgM6UedQciPx1EIXalODA44EqgFEzaDgZEVTkAz+l1jNzcT6KHeBddPps+w1axStGNQlgNpZLNjh/INtM9IESqTd5Y3c/Rz9+lw4nBpdgNq+sNsgRYNaGn92Gr/4tSCEvhyfweqc4s14ARWWrAe+KJ5m/ZZY7GPLN2JdSuR+SOFyPDxTjrkJYSLMIYFhK9CmPlLChI329nszIBSCLPQvO2Aonh+FHCblDkbpR1hdCEJml5cghc59u63pL663pU1cKLsFu9Z1In8T02vCK52ufmxo5FH/9n3nupMVzz+TGMOwSH4BTzjROA=</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="Recommender/Api/Helpers" full_name="Recommender/Api/Helpers"/>
+  <package name="global" full_name="global"/>
+  <namespace name="Php" full_name="Php">
+    <namespace name="Api" full_name="Php\Api">
+      <namespace name="Enums" full_name="Php\Api\Enums"/>
+      <namespace name="Helpers" full_name="Php\Api\Helpers"/>
+      <namespace name="Transport" full_name="Php\Api\Transport"/>
+    </namespace>
+  </namespace>
+  <deprecated count="0"/>
+</project>

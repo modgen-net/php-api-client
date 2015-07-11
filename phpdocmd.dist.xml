@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>Modgen PHP API Client</title>
+    <parser>
+        <target>docs/output</target>
+        <extensions>
+            <extension>module</extension>
+            <extension>inc</extension>
+            <extension>php</extension>
+        </extensions>
+    </parser>
+    <directory>src</directory>
+    <transformer>
+        <target>docs</target>
+    </transformer>
+    <transformations>
+        <template name="xml" />
+    </transformations>
+    <files>
+        <directory>src</directory>
+        <directory>usage</directory>
+        <ignore>test/*</ignore>
+    </files>
+</phpdoc>

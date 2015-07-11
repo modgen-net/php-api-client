@@ -18,6 +18,7 @@ use Php\Api\Transport\Direct;
 use Php\Api\Transport\Transport;
 use Php\Api\Enums\ExceptionsEnum;
 use Php\Api\ApiException;
+use Php\Api\Helpers\CurlResult;
 
 class Client
 {
@@ -156,41 +157,187 @@ class Client
     /* ITEMS Section */
 
     /**
-     * Method will set item properties base on given list of propertyName=>propertyType
-     * @param array $properties - list of properties to set (int, double, string, boolean, timestamp, set, price)
-     * @return array
-     */
-    public function setItemProperties(array $properties)
-    {
-        $propResponseList = array();
-
-        foreach ($properties as $key => $val) {
-
-            $propertyResponse = self::setItemProperty($key, $val);
-            $roleResponse = self::setItemRole($key, $val);
-
-            $propResponseList[$key] = array(
-                'property' => $propertyResponse,
-                'role' => $roleResponse
-            );
-        }
-
-        return $propResponseList;
-    }
-
-    /**
-     * Method will set one item property (and type)
-     * @param array $properties - list of properties to set (int, double, string, boolean, timestamp, set, price)
-     * @return array
+     * Method will add item to DB
+     * @param string $itemId - item ID name
+     * @return string
      * @throws ApiException
      */
-    public function setItemProperty($propertyName, $propertyType)
+    public function addItem($itemId)
     {
         $transport = $this->getTransport();
 
-        if ($propertyType === 'price') {
-            $propertyType = 'double';
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
+
+        $transport->addCall($method, $url);
+
+        $response = $transport->process();
+
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 201) {
+            throw new ApiException(
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
+                    array(
+                        '__method__' => __FUNCTION__,
+                        '__body__' => $response->getResponseBody()
+                    )
+                ),
+                $response->getResponseCode()
+            );
         }
+
+        return $response->getResponseBody();
+    }
+
+    /**
+     * Method will list items from DB
+     * @param string $filter - An MQL expression to filter results. See API DOC -> 2.1.2 LIST ITEMS
+     * @return array
+     * @throws ApiException
+     */
+    public function listItems($filter = '')
+    {
+        $transport = $this->getTransport();
+
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__filter__' => $filter));
+
+        $transport->addCall($method, $url);
+
+        $response = $transport->process();
+
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
+            throw new ApiException(
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
+                    array(
+                        '__method__' => __FUNCTION__,
+                        '__body__' => $response->getResponseBody()
+                    )
+                ),
+                $response->getResponseCode()
+            );
+        }
+
+        return $response->getResponseBody();
+    }
+
+    /**
+     * Method will delete item from DB. Also other data will be deleted. See API DOCs for more info
+     * @param string $itemId - name of item ID
+     * @return string
+     * @throws ApiException
+     */
+    public function deleteItem($itemId)
+    {
+        $transport = $this->getTransport();
+
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
+        $transport->addCall($method, $url);
+
+        $response = $transport->process();
+
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
+            throw new ApiException(
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
+                    array(
+                        '__method__' => __FUNCTION__,
+                        '__body__' => $response->getResponseBody()
+                    )
+                ),
+                $response->getResponseCode()
+            );
+        }
+
+        return $response->getResponseBody();
+    }
+
+    /**
+     * Method will delete items defined in $itemsList as a array of its names
+     * @param array $itemsList - items list to delete
+     * @return array
+     */
+    public function deleteItems(array $itemsList)
+    {
+        $resultList = array();
+        foreach ($itemsList as $item) {
+            $resultList[$item] = self::deleteItem($item);
+        }
+
+        return $resultList;
+    }
+
+    /**
+     * Method will insert item with its values to DB
+     * @param array $data - data to add
+     * @param string $idField - definition of field name which represents main identificator
+     * @param boolean $cascadeCreate - create automatically item
+     * @return string
+     * @throws ApiException
+     */
+    public function insertItem(array $data, $idFiled = 'id', $cascadeCreate = true)
+    {
+        if (array_key_exists($idFiled, $data)) {
+            $transport = $this->getTransport();
+
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $data[$idFiled]));
+
+            //Remove id element from post data
+            if (isset($data[$idFiled])) {
+                unset($data[$idFiled]);
+            }
+
+            if ($cascadeCreate) {
+                $data['!cascadeCreate'] = true;
+            }
+
+            //Set post data
+            $postData = http_build_query($data);
+
+            $transport->addCall($method, $url, $postData);
+
+            $response = $transport->process();
+
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 201) {
+                throw new ApiException(
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
+                        array(
+                            '__method__' => __FUNCTION__,
+                            '__body__' => $response->getResponseBody()
+                        )
+                    ),
+                    $response->getResponseCode()
+                );
+            }
+
+            return $response->getResponseBody();
+        } else {
+            throw new ApiException(
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_ITEMS_NO_ID_DEFINED,
+                    array(
+                        '__id__' => $idFiled
+                    )
+                ),
+                500
+            );
+        }
+    }
+
+    /**
+     * Method will add one item property and its type to DB
+     * @param string $propertyName - name of the property
+     * @param string $propertyType - type of property (int, double, string, boolean, timestamp, set). See API DOCs for details.
+     * @return array
+     * @throws ApiException
+     */
+    public function addItemProperty($propertyName, $propertyType)
+    {
+        $transport = $this->getTransport();
 
         $method = RestfulEnum::getMethod(__FUNCTION__);
         $url = RestfulEnum::getUrl(__FUNCTION__, array(
@@ -219,124 +366,31 @@ class Client
     }
 
     /**
-     * Method will set property role base on propertyName parameter
-     * @param string $propertyName - property name needed to set role
-     * @return string
-     * @throws ApiException
+     * Extra API CLient method will set item properties base on given list of propertyName=>propertyType and add necessary roles
+     * @param array $properties - list of properties to set (int, double, string, boolean, timestamp, set, price)
+     * @return array
      */
-    public function setItemRole($propertyName)
+    public function addItemProperties(array $properties)
     {
-        //Get right role name
-        $role = Roles::getPropertyType($propertyName);
-        if ($role) {
-            $transport = $this->getTransport();
+        $propResponseList = array();
 
-            $method = RestfulEnum::getMethod(__FUNCTION__);
-            $url = RestfulEnum::getUrl(__FUNCTION__, array('__rolename__' => $role));
+        foreach ($properties as $key => $val) {
 
-            //Add url query data
-            $url = $url . '?' . http_build_query(array('propertyName' => $propertyName));
-
-            //Do call
-            $transport->addCall($method, $url);
-
-            $response = $transport->process();
-
-            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
-                throw new ApiException(
-                    ExceptionsEnum::getMessage(
-                        ExceptionsEnum::API_RESPONSE_FAIL,
-                        array(
-                            '__method__' => __FUNCTION__,
-                            '__body__' => $response->getResponseBody()
-                        )
-                    ),
-                    $response->getResponseCode()
-                );
+            $propertyType = $val;
+            if ($val === 'price') {
+                $propertyType = 'double';
             }
 
-            return $response->getResponseBody();
-        } else {
-            return 'not_needed';
-        }
-    }
+            $propertyResponse = self::addItemProperty($key, $propertyType);
+            $roleResponse = self::setItemRole($key, $propertyType);
 
-    /**
-     * Method will receive item properties
-     * @return array
-     * @throws ApiException
-     */
-    public function getItemProperties()
-    {
-        $transport = $this->getTransport();
-
-        $method = RestfulEnum::getMethod(__FUNCTION__);
-        $url = RestfulEnum::getUrl(__FUNCTION__);
-        $transport->addCall($method, $url);
-
-        $response = $transport->process();
-
-        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
-            throw new ApiException(
-                ExceptionsEnum::getMessage(
-                    ExceptionsEnum::API_RESPONSE_FAIL,
-                    array(
-                        '__method__' => __FUNCTION__,
-                        '__body__' => $response->getResponseBody()
-                    )
-                ),
-                $response->getResponseCode()
+            $propResponseList[$key] = array(
+                'property' => $propertyResponse,
+                'role' => $roleResponse
             );
         }
 
-        return $response->getResponseBody();
-    }
-
-    /**
-     * Method will delete item property
-     * @param array $propertiesNameList - properties name list to delete
-     * @return array
-     */
-    public function deleteItemProperties(array $propertiesNameList)
-    {
-        $resultList = array();
-        foreach ($propertiesNameList as $property) {
-            $resultList[$property] = self::deleteItemProperty($property);
-        }
-
-        return $resultList;
-    }
-
-    /**
-     * Method will delete item property
-     * @param string $propertyName - property name to delete
-     * @return string
-     * @throws ApiException
-     */
-    public function deleteItemProperty($propertyName)
-    {
-        $transport = $this->getTransport();
-
-        $method = RestfulEnum::getMethod(__FUNCTION__);
-        $url = RestfulEnum::getUrl(__FUNCTION__, array('__propertyname__' => $propertyName));
-        $transport->addCall($method, $url);
-
-        $response = $transport->process();
-
-        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
-            throw new ApiException(
-                ExceptionsEnum::getMessage(
-                    ExceptionsEnum::API_RESPONSE_FAIL,
-                    array(
-                        '__method__' => __FUNCTION__,
-                        '__body__' => $response->getResponseBody()
-                    )
-                ),
-                $response->getResponseCode()
-            );
-        }
-
-        return $response->getResponseBody();
+        return $propResponseList;
     }
 
     /**
@@ -372,77 +426,122 @@ class Client
     }
 
     /**
-     * Method will add item to DB
-     * @param array $data - data to add
-     * @param string $idField - definition of field name which represents main identificator
-     * @param boolean $autoCreate - create automatically item
-     * @return string
+     * Method will receive item properties
+     * @return array
      * @throws ApiException
      */
-    public function addItem(array $data, $idFiled = 'id', $autoCreate = true)
-    {
-        if (array_key_exists($idFiled, $data)) {
-            $transport = $this->getTransport();
-
-            $method = RestfulEnum::getMethod(__FUNCTION__);
-            $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $data[$idFiled]));
-
-            //Remove id element from post data
-            if (isset($data[$idFiled])) {
-                unset($data[$idFiled]);
-            }
-
-            if ($autoCreate) {
-                $data['!cascadeCreate'] = true;
-            }
-
-            //Set post data
-            $postData = http_build_query($data);
-
-            $transport->addCall($method, $url, $postData);
-
-            $response = $transport->process();
-
-            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
-                throw new ApiException(
-                    ExceptionsEnum::getMessage(
-                        ExceptionsEnum::API_RESPONSE_FAIL,
-                        array(
-                            '__method__' => __FUNCTION__,
-                            '__body__' => $response->getResponseBody()
-                        )
-                    ),
-                    $response->getResponseCode()
-                );
-            }
-
-            return $response->getResponseBody();
-        } else {
-            throw new ApiException(
-                ExceptionsEnum::getMessage(
-                    ExceptionsEnum::API_ITEMS_NO_ID_DEFINED,
-                    array(
-                        '__id__' => $idFiled
-                    )
-                ),
-                500
-            );
-        }
-    }
-
-    /**
-     * Method will add item to DB
-     * @param string $name - item name
-     * @return string
-     * @throws ApiException
-     */
-    public function addItemId($name)
+    public function getItemProperties()
     {
         $transport = $this->getTransport();
 
         $method = RestfulEnum::getMethod(__FUNCTION__);
-        $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $name));
+        $url = RestfulEnum::getUrl(__FUNCTION__);
         $transport->addCall($method, $url);
+
+        $response = $transport->process();
+
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
+            throw new ApiException(
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
+                    array(
+                        '__method__' => __FUNCTION__,
+                        '__body__' => $response->getResponseBody()
+                    )
+                ),
+                $response->getResponseCode()
+            );
+        }
+
+        //Fix for empty response string "[]"
+        return $response->getResponseBody() === '[]' ? false : $response->getResponseBody();
+    }
+
+    /**
+     * Method will delete item property
+     * @param string $propertyName - property name to delete
+     * @return string
+     * @throws ApiException
+     */
+    public function deleteItemProperty($propertyName)
+    {
+        $transport = $this->getTransport();
+
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__propertyname__' => $propertyName));
+        $transport->addCall($method, $url);
+
+        $response = $transport->process();
+
+        if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
+            throw new ApiException(
+                ExceptionsEnum::getMessage(
+                    ExceptionsEnum::API_RESPONSE_FAIL,
+                    array(
+                        '__method__' => __FUNCTION__,
+                        '__body__' => $response->getResponseBody()
+                    )
+                ),
+                $response->getResponseCode()
+            );
+        }
+
+        return $response->getResponseBody();
+    }
+
+    /**
+     * Method will delete item properties defined in $propertiesNameList as a array of property names
+     * @param array $propertiesNameList - properties list to delete
+     * @return array
+     */
+    public function deleteItemProperties(array $propertiesNameList)
+    {
+        $resultList = array();
+        foreach ($propertiesNameList as $property) {
+            $resultList[$property] = self::deleteItemProperty($property);
+        }
+
+        return $resultList;
+    }
+
+    /**
+     * Method will delete all item properties
+     * @param array $propertiesNameList - properties name list to delete
+     * @return mixed
+     */
+    public function deleteAllItemProperties()
+    {
+        $resultList = array();
+        if( $propertiesList = self::getItemProperties() ) {
+            foreach ($propertiesList as $property) {
+                $resultList[$property->name] = self::deleteItemProperty($property->name);
+            }
+
+            return $resultList;
+        }
+
+        return false;
+    }
+
+    /**
+     * Method will set property role base on propertyName parameter
+     * @param array $itemId - item ID where its properties will be filled by values
+     * @param array $data - property name => value data set
+     * @return string
+     * @throws ApiException
+     */
+    public function setItemValues($itemId, $data)
+    {
+        $transport = $this->getTransport();
+
+        $method = RestfulEnum::getMethod(__FUNCTION__);
+        $url = RestfulEnum::getUrl(__FUNCTION__, array('__itemid__' => $itemId));
+
+        //Prepare POST data
+        $postData = http_build_query($data);
+
+        //Do call
+        $transport->addCall($method, $url, $postData);
 
         $response = $transport->process();
 
@@ -498,6 +597,49 @@ class Client
         }
 
         return $response->getResponseBody();
+    }
+
+    /**
+     * Method will set property role base on propertyName parameter
+     * @param string $propertyName - property name needed to set role
+     * @return string
+     * @throws ApiException
+     */
+    public function setItemRole($propertyName)
+    {
+        //Get right role name
+        $role = Roles::getPropertyType($propertyName);
+        if ($role) {
+            $transport = $this->getTransport();
+
+            $method = RestfulEnum::getMethod(__FUNCTION__);
+            $url = RestfulEnum::getUrl(__FUNCTION__, array('__rolename__' => $role));
+
+            //Add url query data
+            $url = $url . '?' . http_build_query(array('propertyName' => $propertyName));
+
+            //Do call
+            $transport->addCall($method, $url);
+
+            $response = $transport->process();
+
+            if ($response instanceof CurlResult && $response->getResponseCode() !== 200) {
+                throw new ApiException(
+                    ExceptionsEnum::getMessage(
+                        ExceptionsEnum::API_RESPONSE_FAIL,
+                        array(
+                            '__method__' => __FUNCTION__,
+                            '__body__' => $response->getResponseBody()
+                        )
+                    ),
+                    $response->getResponseCode()
+                );
+            }
+
+            return $response->getResponseBody();
+        } else {
+            return 'not_needed';
+        }
     }
 
     /**
@@ -599,15 +741,15 @@ class Client
      * Method will add series items
      * @param string $seriesId - series ID
      * @param array $data - list of elements required for series items
-     * key itemType (string) - type of item (item,series)
-     * key itemId (string) - id of the purchased item
-     * key time (integer) - timestamp
-     * @param boolean $autoCreate - create automatically item with empty fields when purchase of this item exists
+     * @description key  itemType (string) - type of item (item,series)
+     * @description key  itemId (string) - id of the purchased item
+     * @description key  time (integer) - timestamp
+     * @param boolean $cascadeCreate - create automatically item with empty fields when purchase of this item exists
      * @return string
      * @throws ApiException
      * @todo Fix "cascadeCreate" param name. Other methods use "!cascadeCreate"
      */
-    public function addIntoSeries($seriesId, array $data, $autoCreate = true)
+    public function addIntoSeries($seriesId, array $data, $cascadeCreate = true)
     {
         $requiredKeys = array('itemType', 'itemId', 'time');
 
@@ -618,7 +760,7 @@ class Client
             $method = RestfulEnum::getMethod(__FUNCTION__);
             $url = RestfulEnum::getUrl(__FUNCTION__, array('__seriesid__' => $seriesId));
 
-            if ($autoCreate) {
+            if ($cascadeCreate) {
                 $data['cascadeCreate'] = true;
             }
 
@@ -692,10 +834,10 @@ class Client
     /**
      * Method will delete series items
      * @param array $properties - list of elements required for series items to delete (below)
-     * key seriesId (string) - id of the user
-     * key itemType (string) - type of item
-     * key itemId (string) - id of the purchased item
-     * key time (integer) - timestamp
+     * @description key seriesId (string) - id of the user
+     * @description key  itemType (string) - type of item
+     * @description key  itemId (string) - id of the purchased item
+     * @description key  time (integer) - timestamp
      * @return string
      * @throws ApiException
      */
@@ -882,22 +1024,21 @@ class Client
 
 
 
-
-    /* PURCHASES Section */
+    /* USER-ITEM interactions section */
 
     /**
      * Method will add detail views
      * @param array $data - list of elements required for detailview (below)
-     * key userId (string) - id of the user
-     * key itemId (string) - id of the purchased item
-     * key timestamp (integer) - timestamp
-     * key duration (integer) - duration
-     * @param boolean $autoCreate - create automatically item with empty fields when purchase of this item exists
+     * @description key  userId (string) - id of the user
+     * @description key  itemId (string) - id of the purchased item
+     * @description key  timestamp (integer) - timestamp
+     * @description key  duration (integer) - duration
+     * @param boolean $cascadeCreate - create automatically item with empty fields when purchase of this item exists
      * @return string
      * @throws ApiException
      * @todo Fix "cascadeCreate" param name. Other methods use "!cascadeCreate"
      */
-    public function addDetailView(array $data, $autoCreate = true)
+    public function addDetailView(array $data, $cascadeCreate = true)
     {
         $requiredKeys = array('userId', 'itemId', 'timestamp');
 
@@ -908,7 +1049,7 @@ class Client
             $method = RestfulEnum::getMethod(__FUNCTION__);
             $url = RestfulEnum::getUrl(__FUNCTION__);
 
-            if ($autoCreate) {
+            if ($cascadeCreate) {
                 $data['cascadeCreate'] = true;
             }
 
@@ -1063,18 +1204,22 @@ class Client
         }
     }
 
+
+
+    // PURCHASES Section
+
     /**
      * Method will add purchase
      * @param array $data - list of elements required for purchase (below)
-     * key userId (string) - id of the user
-     * key itemId (string) - id of the purchased item
-     * key timestamp (integer) - timestamp
-     * @param boolean $autoCreate - create automatically item with empty fields when purchase of this item exists
+     * @description key  userId (string) - id of the user
+     * @description key  itemId (string) - id of the purchased item
+     * @description key  timestamp (integer) - timestamp
+     * @param boolean $cascadeCreate - create automatically item with empty fields when purchase of this item exists
      * @return string
      * @throws ApiException
      * @todo Fix "cascadeCreate" param name. Other methods use "!cascadeCreate"
      */
-    public function addPurchase(array $data, $autoCreate = true)
+    public function addPurchase(array $data, $cascadeCreate = true)
     {
         $requiredKeys = array('userId', 'itemId', 'timestamp');
 
@@ -1085,7 +1230,7 @@ class Client
             $method = RestfulEnum::getMethod(__FUNCTION__);
             $url = RestfulEnum::getUrl(__FUNCTION__);
 
-            if ($autoCreate) {
+            if ($cascadeCreate) {
                 $data['cascadeCreate'] = true;
             }
 
@@ -1240,19 +1385,23 @@ class Client
         }
     }
 
+
+
+    //RATING Section
+
     /**
      * Method will add rating
      * @param array $data - list of elements required for detailview (below)
-     * key userId (string) - id of the user
-     * key itemId (string) - id of the purchased item
-     * key timestamp (integer) - timestamp
-     * key rating (double) - rating (from -1.0 to 1.0)
-     * @param boolean $autoCreate - create automatically item with empty fields when purchase of this item exists
+     * @description key  userId (string) - id of the user
+     * @description key  itemId (string) - id of the purchased item
+     * @description key  timestamp (integer) - timestamp
+     * @description key  rating (double) - rating (from -1.0 to 1.0)
+     * @param boolean $cascadeCreate - create automatically item with empty fields when purchase of this item exists
      * @return string
      * @throws ApiException
      * @todo Fix "cascadeCreate" param name. Other methods use "!cascadeCreate"
      */
-    public function addRating(array $data, $autoCreate = true)
+    public function addRating(array $data, $cascadeCreate = true)
     {
         $requiredKeys = array('userId', 'itemId', 'timestamp', 'rating');
 
@@ -1263,7 +1412,7 @@ class Client
             $method = RestfulEnum::getMethod(__FUNCTION__);
             $url = RestfulEnum::getUrl(__FUNCTION__);
 
-            if ($autoCreate) {
+            if ($cascadeCreate) {
                 $data['cascadeCreate'] = true;
             }
 
@@ -1418,18 +1567,22 @@ class Client
         }
     }
 
+
+
+    //BOOMARK Section
+
     /**
      * Method will add boomark
      * @param array $data - list of elements required for purchase (below)
-     * key userId (string) - id of the user
-     * key itemId (string) - id of the purchased item
-     * key timestamp (integer) - timestamp
-     * @param boolean $autoCreate - create automatically item with empty fields when purchase of this item exists
+     * @description key  userId (string) - id of the user
+     * @description key  itemId (string) - id of the purchased item
+     * @description key  timestamp (integer) - timestamp
+     * @param boolean $cascadeCreate - create automatically item with empty fields when purchase of this item exists
      * @return string
      * @throws ApiException
      * @todo Fix "cascadeCreate" param name. Other methods use "!cascadeCreate"
      */
-    public function addBoomark(array $data, $autoCreate = true)
+    public function addBoomark(array $data, $cascadeCreate = true)
     {
         $requiredKeys = array('userId', 'itemId', 'timestamp');
 
@@ -1440,7 +1593,7 @@ class Client
             $method = RestfulEnum::getMethod(__FUNCTION__);
             $url = RestfulEnum::getUrl(__FUNCTION__);
 
-            if ($autoCreate) {
+            if ($cascadeCreate) {
                 $data['cascadeCreate'] = true;
             }
 
@@ -1595,17 +1748,21 @@ class Client
         }
     }
 
+
+
+    //RECOMMENDATION Section
+
     /**
      * Method will return user base recommendations
      * @param string $userId - id of the user
      * @param integer $count - number of items that will be received
      * @param array $params - list of parameters required for recommendation
-     * key filterMql (string) - define MQL string for filtering - see API DOC
-     * key boosterMql (string) - define MQL string for boostering - see API DOC
-     * key $allowNonexistent (boolean) - see API DOC
-     * key $diversity (double) - see API DOC
-     * key $rotationRate (double) - see API DOC
-     * key $rotationTime (double) - see API DOC
+     * @description key  filterMql (string) - define MQL string for filtering - see API DOC
+     * @description key  boosterMql (string) - define MQL string for boostering - see API DOC
+     * @description key  $allowNonexistent (boolean) - see API DOC
+     * @description key  $diversity (double) - see API DOC
+     * @description key  $rotationRate (double) - see API DOC
+     * @description key  $rotationTime (double) - see API DOC
      * @return array
      * @throws ApiException
      */
@@ -1646,12 +1803,12 @@ class Client
      * @param string $itemId - id of the item
      * @param integer $count - number of items that will be received
      * @param array $params - list of parameters required for recommendation
-     * key filterMql (string) - define MQL string for filtering - see API DOC
-     * key boosterMql (string) - define MQL string for boostering - see API DOC
-     * key $allowNonexistent (boolean) - see API DOC
-     * key $diversity (double) - see API DOC
-     * key $rotationRate (double) - see API DOC
-     * key $rotationTime (double) - see API DOC
+     * @description key  filterMql (string) - define MQL string for filtering - see API DOC
+     * @description key  boosterMql (string) - define MQL string for boostering - see API DOC
+     * @description key  $allowNonexistent (boolean) - see API DOC
+     * @description key  $diversity (double) - see API DOC
+     * @description key  $rotationRate (double) - see API DOC
+     * @description key  $rotationTime (double) - see API DOC
      * @return array
      * @throws ApiException
      */
@@ -1686,8 +1843,6 @@ class Client
         }
         return $response->getResponseBody();
     }
-
-
 
 
 

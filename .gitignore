@@ -1,6 +1,7 @@
 .idea/*
 vendor/*
 /test/report/*
+/test/auth.dev.php
 /docs/output
 composer.lock
 composer.phar

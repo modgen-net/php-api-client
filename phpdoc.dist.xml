@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <phpdoc>
-    <title>${PROJECT_NAME}</title>
+    <title>Modgen PHP API Client</title>
     <parser>
         <target>docs/output</target>
         <extensions>
@@ -8,13 +8,14 @@
             <extension>inc</extension>
             <extension>php</extension>
         </extensions>
-    </parser><directory>src</directory>
+    </parser>
+    <directory>src</directory>
     <transformer>
         <target>docs/documentation</target>
     </transformer>
     <files>
         <directory>src</directory>
-        <ignore>tests/*</ignore>
-        <ignore>Tests/*</ignore>
+        <directory>usage</directory>
+        <ignore>test/*</ignore>
     </files>
 </phpdoc>
