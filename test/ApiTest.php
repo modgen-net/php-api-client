@@ -84,6 +84,14 @@ class ApiTest extends PHPUnit_Framework_TestCase
         $this->assertJsonStringEqualsJsonString(json_encode($this->classApiClient->deleteAllItemProperties()), '{"extra_description":"ok"}');
     }
 
+    public function testSetItemRole()
+    {
+        $this->classApiClient->addItemProperty('price', 'double');
+        $this->assertSame($this->classApiClient->setItemRole('price'), 'ok');
+        $this->classApiClient->deleteItemProperty('price');
+    }
+
+
     public function testAddItemProperties()
     {
         $this->assertJsonStringEqualsJsonString(

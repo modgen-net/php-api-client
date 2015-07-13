@@ -13,22 +13,29 @@ class Roles
 {
     /**
      * Return right property type
-     * @param string $value - property to check
-     * @param boolean $forceSetType - force type of value to "set"
+     * @param string $name - property name
+     * @param string $forceType - force role type
      * @return string
      */
-    public static function getPropertyType($name, $forceSetType = false)
+    public static function getPropertyType($name, $roleType = null)
     {
-        switch ($name) {
-            case 'price':
-                return 'income';
-                break;
-            case 'name':
-                return 'name';
-                break;
-            default:
-                return false;
-                break;
+        $role = false;
+
+        $types = array(
+            'price' => 'income',
+            'name' => 'name'
+        );
+
+        if (array_key_exists($name, $types)) {
+            $role = $types[$name];
         }
+        if (array_key_exists($roleType, $types)) {
+            $role = $types[$roleType];
+        }
+        if (in_array($roleType, $types)) {
+            $role = $roleType;
+        }
+
+        return $role;
     }
 }

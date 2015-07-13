@@ -512,7 +512,7 @@ class Client
     public function deleteAllItemProperties()
     {
         $resultList = array();
-        if( $propertiesList = self::getItemProperties() ) {
+        if ($propertiesList = self::getItemProperties()) {
             foreach ($propertiesList as $property) {
                 $resultList[$property->name] = self::deleteItemProperty($property->name);
             }
@@ -602,13 +602,15 @@ class Client
     /**
      * Method will set property role base on propertyName parameter
      * @param string $propertyName - property name needed to set role
+     * @param string $roleType - force property role type. Roles are defined in Roles.php class
      * @return string
      * @throws ApiException
+     * @todo Move role types definition to ENUM
      */
-    public function setItemRole($propertyName)
+    public function setItemRole($propertyName, $roleType = null)
     {
         //Get right role name
-        $role = Roles::getPropertyType($propertyName);
+        $role = Roles::getPropertyType($propertyName, $roleType);
         if ($role) {
             $transport = $this->getTransport();
 
